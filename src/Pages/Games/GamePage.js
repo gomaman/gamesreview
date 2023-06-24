@@ -17,6 +17,7 @@ const GamePage = () => {
     const [picture, setPicture] = useState(null);
     const [review, setReview] = useState(null);
     const [userReview, setUserReview] = useState([]);
+    const [reviewRender, setReviewRender] = useState(false)
 
     const { id } = useParams();
 
@@ -39,13 +40,17 @@ const GamePage = () => {
             .catch(err => toast.error(err.message))
     }, [id]);
 
+    const resetUserReview = () => {
+        setReviewRender(prevReviewRender => !prevReviewRender);
+    };
+
     useEffect(() => {
         axios.get(API_URL + `/games/${id}?_embed=userReviews`)
             .then(res => {
                 setUserReview(res.data.userReviews);
             })
             .catch(err => toast.error(err.message))
-    }, [id]);
+    }, [id,reviewRender ]);
 
 
 
@@ -106,9 +111,7 @@ const GamePage = () => {
                     theme="light"
                 />
 
-                <UserReviewForm>
-
-                </UserReviewForm>
+                <UserReviewForm resetUserReview={resetUserReview} />
             </section>
         </Container>
     );
