@@ -16,6 +16,10 @@ export const NAV_ITEMS = [
         text: "Albums"
     },
     {
+        href: "/news",
+        text: "News"
+    },
+    {
         href: "/search",
         text: "Search"
     },
