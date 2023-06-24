@@ -44,6 +44,81 @@
 
   "games": [
     {
+      "id": 1,
+      "title": "A Plague Tale: Innocence",
+      "platform": ["PC", "PlayStation 4", "Xbox One"],
+      "releaseDate": "2019-05-14",
+      "genreId": 4
+    },
+    {
+      "id": 2,
+      "title": "Hades",
+      "platform": ["PC", "Nintendo Switch"],
+      "releaseDate": "2020-09-17",
+      "genreId": 3
+    },
+    {
+      "id": 3,
+      "title": "Celeste",
+      "platform": ["PC", "PlayStation 4", "Xbox One", "Nintendo Switch"],
+      "releaseDate": "2018-01-25",
+      "genreId": 9
+    },
+    {
+      "id": 4,
+      "title": "Stardew Valley",
+      "platform": ["PC", "PlayStation 4", "Xbox One", "Nintendo Switch"],
+      "releaseDate": "2016-02-26",
+      "genreId": 6
+    },
+    {
+      "id": 5,
+      "title": "Undertale",
+      "platform": [
+        "PC",
+        "PlayStation 4",
+        "PlayStation Vita",
+        "Nintendo Switch"
+      ],
+      "releaseDate": "2015-09-15",
+      "genreId": 9
+    },
+    {
+      "id": 6,
+      "title": "Disco Elysium",
+      "platform": ["PC", "PlayStation 4", "PlayStation 5", "Xbox Series X/S"],
+      "releaseDate": "2019-10-15",
+      "genreId": 3
+    },
+    {
+      "id": 7,
+      "title": "Katana ZERO",
+      "platform": ["PC", "Nintendo Switch"],
+      "releaseDate": "2019-04-18",
+      "genreId": 2
+    },
+    {
+      "id": 8,
+      "title": "Firewatch",
+      "platform": ["PC", "PlayStation 4", "Xbox One", "Nintendo Switch"],
+      "releaseDate": "2016-02-09",
+      "genreId": 2
+    },
+    {
+      "id": 9,
+      "title": "Outer Wilds",
+      "platform": ["PC", "PlayStation 4", "Xbox One"],
+      "releaseDate": "2019-05-29",
+      "genreId": 2
+    },
+    {
+      "id": 10,
+      "title": "Hyper Light Drifter",
+      "platform": ["PC", "PlayStation 4", "Xbox One", "Nintendo Switch"],
+      "releaseDate": "2016-03-31",
+      "genreId": 5
+    },
+    {
       "id": 11,
       "title": "Assassin's Creed Valhalla",
       "platform": [
@@ -951,6 +1026,46 @@
     }
   ],
   "pictures": [
+    {
+      "gameId": 1,
+      "url": "https://cdn1.epicgames.com/400347196e674de89c23cc2a7f2121db/offer/AC%20KINGDOM%20PREORDER_STANDARD%20EDITION_EPIC_Key_Art_Wide_3840x2160-3840x2160-485fe17203671386c71bde8110886c7d.jpg"
+    },
+    {
+      "gameId": 2,
+      "url": "https://cdn1.epicgames.com/400347196e674de89c23cc2a7f2121db/offer/AC%20KINGDOM%20PREORDER_STANDARD%20EDITION_EPIC_Key_Art_Wide_3840x2160-3840x2160-485fe17203671386c71bde8110886c7d.jpg"
+    },
+    {
+      "gameId": 3,
+      "url": "https://cdn1.epicgames.com/400347196e674de89c23cc2a7f2121db/offer/AC%20KINGDOM%20PREORDER_STANDARD%20EDITION_EPIC_Key_Art_Wide_3840x2160-3840x2160-485fe17203671386c71bde8110886c7d.jpg"
+    },
+    {
+      "gameId": 4,
+      "url": "https://cdn1.epicgames.com/400347196e674de89c23cc2a7f2121db/offer/AC%20KINGDOM%20PREORDER_STANDARD%20EDITION_EPIC_Key_Art_Wide_3840x2160-3840x2160-485fe17203671386c71bde8110886c7d.jpg"
+    },
+    {
+      "gameId": 5,
+      "url": "https://cdn1.epicgames.com/400347196e674de89c23cc2a7f2121db/offer/AC%20KINGDOM%20PREORDER_STANDARD%20EDITION_EPIC_Key_Art_Wide_3840x2160-3840x2160-485fe17203671386c71bde8110886c7d.jpg"
+    },
+    {
+      "gameId": 6,
+      "url": "https://cdn1.epicgames.com/400347196e674de89c23cc2a7f2121db/offer/AC%20KINGDOM%20PREORDER_STANDARD%20EDITION_EPIC_Key_Art_Wide_3840x2160-3840x2160-485fe17203671386c71bde8110886c7d.jpg"
+    },
+    {
+      "gameId": 7,
+      "url": "https://cdn1.epicgames.com/400347196e674de89c23cc2a7f2121db/offer/AC%20KINGDOM%20PREORDER_STANDARD%20EDITION_EPIC_Key_Art_Wide_3840x2160-3840x2160-485fe17203671386c71bde8110886c7d.jpg"
+    },
+    {
+      "gameId": 8,
+      "url": "https://cdn1.epicgames.com/400347196e674de89c23cc2a7f2121db/offer/AC%20KINGDOM%20PREORDER_STANDARD%20EDITION_EPIC_Key_Art_Wide_3840x2160-3840x2160-485fe17203671386c71bde8110886c7d.jpg"
+    },
+    {
+      "gameId": 9,
+      "url": "https://cdn1.epicgames.com/400347196e674de89c23cc2a7f2121db/offer/AC%20KINGDOM%20PREORDER_STANDARD%20EDITION_EPIC_Key_Art_Wide_3840x2160-3840x2160-485fe17203671386c71bde8110886c7d.jpg"
+    },
+    {
+      "gameId": 10,
+      "url": "https://cdn1.epicgames.com/400347196e674de89c23cc2a7f2121db/offer/AC%20KINGDOM%20PREORDER_STANDARD%20EDITION_EPIC_Key_Art_Wide_3840x2160-3840x2160-485fe17203671386c71bde8110886c7d.jpg"
+    },
     {
       "gameId": 11,
       "url": "https://cdn1.epicgames.com/400347196e674de89c23cc2a7f2121db/offer/AC%20KINGDOM%20PREORDER_STANDARD%20EDITION_EPIC_Key_Art_Wide_3840x2160-3840x2160-485fe17203671386c71bde8110886c7d.jpg"

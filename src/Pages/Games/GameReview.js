@@ -1,6 +1,5 @@
 
 const GameReview = ({review}) => {
-// console.log(review)
     return (
         <div>
             <ul>
