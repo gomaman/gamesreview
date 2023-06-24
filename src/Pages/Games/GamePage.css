@@ -1,0 +1,27 @@
+.games-page-container {
+    padding: 20px;
+  }
+  
+  .game-details-section {
+    margin-bottom: 20px;
+  }
+  
+  .game-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .platform-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  .platform-item {
+    margin-bottom: 5px;
+  }
+  
+  .release-date p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }

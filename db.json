@@ -953,87 +953,87 @@
   "pictures": [
     {
       "gameId": 11,
-      "picture": "https://cdn1.epicgames.com/400347196e674de89c23cc2a7f2121db/offer/AC%20KINGDOM%20PREORDER_STANDARD%20EDITION_EPIC_Key_Art_Wide_3840x2160-3840x2160-485fe17203671386c71bde8110886c7d.jpg"
+      "url": "https://cdn1.epicgames.com/400347196e674de89c23cc2a7f2121db/offer/AC%20KINGDOM%20PREORDER_STANDARD%20EDITION_EPIC_Key_Art_Wide_3840x2160-3840x2160-485fe17203671386c71bde8110886c7d.jpg"
     },
     {
       "gameId": 11,
-      "picture": "https://howmanychapters.com/wp-content/uploads/2021/07/how-many-chapters-in-asasins-creed-valhalla.jpg"
+      "url": "https://howmanychapters.com/wp-content/uploads/2021/07/how-many-chapters-in-asasins-creed-valhalla.jpg"
     },
     {
       "gameId": 12,
-      "picture": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
+      "url": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
     },
     {
       "gameId": 13,
-      "picture": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
+      "url": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
     },
     {
       "gameId": 14,
-      "picture": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
+      "url": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
     },
     {
       "gameId": 15,
-      "picture": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
+      "url": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
     },
     {
       "gameId": 16,
-      "picture": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
+      "url": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
     },
     {
       "gameId": 17,
-      "picture": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
+      "url": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
     },
     {
       "gameId": 18,
-      "picture": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
+      "url": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
     },
     {
       "gameId": 19,
-      "picture": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
+      "url": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
     },
     {
       "gameId": 20,
-      "picture": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
+      "url": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
     },
     {
       "gameId": 21,
-      "picture": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
+      "url": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
     },
     {
       "gameId": 22,
-      "picture": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
+      "url": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
     },
     {
       "gameId": 23,
-      "picture": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
+      "url": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
     },
     {
       "gameId": 24,
-      "picture": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
+      "url": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
     },
     {
       "gameId": 25,
-      "picture": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
+      "url": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
     },
     {
       "gameId": 26,
-      "picture": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
+      "url": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
     },
     {
       "gameId": 27,
-      "picture": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
+      "url": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
     },
     {
       "gameId": 28,
-      "picture": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
+      "url": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
     },
     {
       "gameId": 29,
-      "picture": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
+      "url": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
     },
     {
       "gameId": 30,
-      "picture": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
+      "url": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
     }
   ]
 }
