@@ -10,10 +10,9 @@
 
 .games-list li .game-container {
   padding: 16px;
-  background-color: rgb(40,48,68);
   border-radius: 4px;
-  margin: 20px 0px;
-  transition: box-shadow 0.2s ease-in-out;
+  color:black;
+  margin: 20px;
 }
 
 .games-list-container {
@@ -21,6 +20,9 @@
   
 }
 
-.game-container:hover {
-  box-shadow: rgba(0, 0, 0, 0.671) 0px 3px 8px;
+.games-list-container li {
+  margin: 60px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }

@@ -1,8 +1,14 @@
 import React from 'react';
-import './GameContainer.css'; // Create a CSS file for styling
+import './GameContainer.css';
+import { Button2 } from './Button/Buttons';
 
-const GameContainer = ({ children }) => {
-  return <div className="game-container">{children}</div>;
+const GameContainer = ({ children, buttonText }) => {
+  return (
+    <div className="game-container">
+      {children}
+      <Button2 className="game-button">{buttonText}</Button2>
+    </div>
+  );
 };
 
 export default GameContainer;
