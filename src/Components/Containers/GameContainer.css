@@ -27,3 +27,23 @@
   background-position: center;
   border-radius: 7px;
 }
+
+.game-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  border-radius: 4px;
+  color: black;
+  margin: 20px;
+}
+
+.game-button {
+  font-size: 16px;
+}
+
+.game-container p {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
