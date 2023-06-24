@@ -1,15 +1,32 @@
+p {
+    margin:0
+}
+
 .blogs-container {
-    gap: 10px;
+    gap: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
+.blog-container {
+    background-color: rgb(40,48,68);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    transition: box-shadow 0.2s ease-in-out;
+    height: 100%;
+  }
 
-
+  .blog-container:hover {
+    box-shadow: rgba(0, 0, 0, 0.671) 0px 3px 8px;
+  }
+  
 .right-blog-container {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     justify-content: end;
+    gap: 20px;
 }
 
 section.hero-section {
@@ -19,7 +36,6 @@ section.hero-section {
  
 .small {
     display: flex;
-    margin-bottom: 40px;
 }
 
   body {
@@ -27,13 +43,46 @@ section.hero-section {
     color: rgb(254,255,254)
   }
 
+
+  .blog-container.big {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+}
+
   .blog-container.big img{
     height: 100%;
     width: 100%;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    flex-direction: column;
-    align-items: center;
     object-fit: cover;
 }
 
+.blog-container.small {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.blog-container.small img{
+    height: 100%;
+    width: 100%;
+}
+
+.sideBlog-content-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    justify-content: space-between;
+}
+
+.main-blog-content-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.games-container {
+    border: 1px white;
+}
+
+.games-list {
+    list-style: none;
+}
