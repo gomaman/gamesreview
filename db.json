@@ -1,5 +1,4 @@
 {
-
   "genres": [
     {
       "id": 1,
@@ -315,7 +314,6 @@
       "author": "BattleRoyalePro",
       "ageRating": "Teen",
       "date": "2023-04-01"
-
     },
     {
       "gameId": 9,
@@ -343,7 +341,6 @@
       "author": "GalacticExplorer",
       "ageRating": "Mature",
       "date": "2023-02-09"
-
     },
     {
       "gameId": 12,
@@ -488,7 +485,6 @@
       "author": "SimmerExtraordinaire",
       "ageRating": "Teen",
       "date": "2023-05-01"
-
     },
     {
       "gameId": 28,
@@ -521,269 +517,269 @@
 
   "userReviews": [
     {
-        "gameId": 1,
-        "score": 8,
-        "title": "Great Game!",
-        "body": "I had a lot of fun playing this game. The graphics are impressive and the gameplay is engaging.",
-        "author": "GamingEnthusiast24",
-        "date": "2023-03-13",
-        "userId": 3
+      "gameId": 1,
+      "score": 8,
+      "title": "Great Game!",
+      "body": "I had a lot of fun playing this game. The graphics are impressive and the gameplay is engaging.",
+      "author": "GamingEnthusiast24",
+      "date": "2023-03-13",
+      "userId": 3
     },
     {
-        "gameId": 1,
-        "score": 6,
-        "title": "Decent Game",
-        "body": "It's an okay game. The visuals are nice, but I felt the gameplay could have been better.",
-        "author": "CasualGamer99",
-        "date": "2022-06-23",
-        "userId": 7
+      "gameId": 1,
+      "score": 6,
+      "title": "Decent Game",
+      "body": "It's an okay game. The visuals are nice, but I felt the gameplay could have been better.",
+      "author": "CasualGamer99",
+      "date": "2022-06-23",
+      "userId": 7
     },
     {
-        "gameId": 2,
-        "score": 9,
-        "title": "Highly Addictive!",
-        "body": "I couldn't put this game down! It's incredibly addictive and the multiplayer is a blast.",
-        "author": "GamingAddict365",
-        "date": "2022-12-03",
-        "userId": 5
+      "gameId": 2,
+      "score": 9,
+      "title": "Highly Addictive!",
+      "body": "I couldn't put this game down! It's incredibly addictive and the multiplayer is a blast.",
+      "author": "GamingAddict365",
+      "date": "2022-12-03",
+      "userId": 5
     },
     {
-        "gameId": 2,
-        "score": 7,
-        "title": "Fun but Flawed",
-        "body": "This game has its moments of fun, but there are some flaws that can be frustrating at times.",
-        "author": "CompetitiveGamer22",
-        "date": "2022-07-11",
-        "userId": 2
+      "gameId": 2,
+      "score": 7,
+      "title": "Fun but Flawed",
+      "body": "This game has its moments of fun, but there are some flaws that can be frustrating at times.",
+      "author": "CompetitiveGamer22",
+      "date": "2022-07-11",
+      "userId": 2
     },
     {
-        "gameId": 3,
-        "score": 8,
-        "title": "Immersive Experience",
-        "body": "Playing this game feels like diving into a whole new world. The story and characters are captivating.",
-        "author": "StorytellerPlayer",
-        "date": "2022-11-23",
-        "userId": 8
+      "gameId": 3,
+      "score": 8,
+      "title": "Immersive Experience",
+      "body": "Playing this game feels like diving into a whole new world. The story and characters are captivating.",
+      "author": "StorytellerPlayer",
+      "date": "2022-11-23",
+      "userId": 8
     },
     {
-        "gameId": 3,
-        "score": 6,
-        "title": "Not for Everyone",
-        "body": "This game has a unique style, but it may not appeal to everyone's taste. Give it a try if you're curious.",
-        "author": "OpenMindedGamer",
-        "date": "2022-07-30",
-        "userId": 6
+      "gameId": 3,
+      "score": 6,
+      "title": "Not for Everyone",
+      "body": "This game has a unique style, but it may not appeal to everyone's taste. Give it a try if you're curious.",
+      "author": "OpenMindedGamer",
+      "date": "2022-07-30",
+      "userId": 6
     },
     {
-        "gameId": 4,
-        "score": 9,
-        "title": "Masterpiece!",
-        "body": "I consider this game a masterpiece. The graphics, gameplay, and story are all top-notch.",
-        "author": "GamingConnoisseur",
-        "date": "2023-03-29",
-        "userId": 1
+      "gameId": 4,
+      "score": 9,
+      "title": "Masterpiece!",
+      "body": "I consider this game a masterpiece. The graphics, gameplay, and story are all top-notch.",
+      "author": "GamingConnoisseur",
+      "date": "2023-03-29",
+      "userId": 1
     },
     {
-        "gameId": 4,
-        "score": 7,
-        "title": "Solid Game",
-        "body": "It's a solid game with good mechanics, but it didn't blow me away like I expected.",
-        "author": "CasualPlayer123",
-        "date": "2023-04-04",
-        "userId": 10
+      "gameId": 4,
+      "score": 7,
+      "title": "Solid Game",
+      "body": "It's a solid game with good mechanics, but it didn't blow me away like I expected.",
+      "author": "CasualPlayer123",
+      "date": "2023-04-04",
+      "userId": 10
     },
     {
-        "gameId": 5,
-        "score": 8,
-        "title": "Fun and Exciting!",
-        "body": "This game is a lot of fun and keeps you on the edge of your seat. Highly recommended.",
-        "author": "AdrenalineJunkie",
-        "date": "2023-03-06",
-        "userId": 3
+      "gameId": 5,
+      "score": 8,
+      "title": "Fun and Exciting!",
+      "body": "This game is a lot of fun and keeps you on the edge of your seat. Highly recommended.",
+      "author": "AdrenalineJunkie",
+      "date": "2023-03-06",
+      "userId": 3
     },
     {
-        "gameId": 5,
-        "score": 6,
-        "title": "Average Game",
-        "body": "It's an average game that offers some enjoyment, but it lacks that special something.",
-        "author": "EverydayGamer",
-        "date": "2023-03-18",
-        "userId": 4
+      "gameId": 5,
+      "score": 6,
+      "title": "Average Game",
+      "body": "It's an average game that offers some enjoyment, but it lacks that special something.",
+      "author": "EverydayGamer",
+      "date": "2023-03-18",
+      "userId": 4
     },
     {
-        "gameId": 6,
-        "score": 8,
-        "title": "Addictive Gameplay!",
-        "body": "I couldn't stop playing this game! The gameplay is addictive, and the graphics are stunning.",
-        "author": "GameMaster88",
-        "date": "2023-06-02",
-        "userId": 5
+      "gameId": 6,
+      "score": 8,
+      "title": "Addictive Gameplay!",
+      "body": "I couldn't stop playing this game! The gameplay is addictive, and the graphics are stunning.",
+      "author": "GameMaster88",
+      "date": "2023-06-02",
+      "userId": 5
     },
     {
-        "gameId": 6,
-        "score": 7,
-        "title": "Solid RPG",
-        "body": "This game offers a solid RPG experience with interesting quests and character progression.",
-        "author": "QuestHunter42",
-        "date": "2022-12-06",
-        "userId": 9
+      "gameId": 6,
+      "score": 7,
+      "title": "Solid RPG",
+      "body": "This game offers a solid RPG experience with interesting quests and character progression.",
+      "author": "QuestHunter42",
+      "date": "2022-12-06",
+      "userId": 9
     },
     {
-        "gameId": 6,
-        "score": 9,
-        "title": "Immersive World",
-        "body": "The world of this game is incredibly immersive, and the story keeps you hooked from start to finish.",
-        "author": "FantasyExplorer",
-        "date": "2023-05-21",
-        "userId": 2
+      "gameId": 6,
+      "score": 9,
+      "title": "Immersive World",
+      "body": "The world of this game is incredibly immersive, and the story keeps you hooked from start to finish.",
+      "author": "FantasyExplorer",
+      "date": "2023-05-21",
+      "userId": 2
     },
     {
-        "gameId": 6,
-        "score": 6,
-        "title": "Mixed Feelings",
-        "body": "I have mixed feelings about this game. While it has some great aspects, it also has its fair share of flaws.",
-        "author": "GamerOpinions",
-        "date": "2023-03-01",
-        "userId": 7
+      "gameId": 6,
+      "score": 6,
+      "title": "Mixed Feelings",
+      "body": "I have mixed feelings about this game. While it has some great aspects, it also has its fair share of flaws.",
+      "author": "GamerOpinions",
+      "date": "2023-03-01",
+      "userId": 7
     },
     {
-        "gameId": 7,
-        "score": 9,
-        "title": "Gorgeous Visuals!",
-        "body": "This game boasts stunning visuals that truly bring the game world to life. It's a treat for the eyes.",
-        "author": "VisualEnthusiast",
-        "date": "2023-03-30",
-        "userId": 6
+      "gameId": 7,
+      "score": 9,
+      "title": "Gorgeous Visuals!",
+      "body": "This game boasts stunning visuals that truly bring the game world to life. It's a treat for the eyes.",
+      "author": "VisualEnthusiast",
+      "date": "2023-03-30",
+      "userId": 6
     },
     {
-        "gameId": 7,
-        "score": 8,
-        "title": "Intense Action",
-        "body": "Get ready for intense action in this game! The combat mechanics are fluid and satisfying.",
-        "author": "ActionGamer21",
-        "date": "2022-12-27",
-        "userId": 8
+      "gameId": 7,
+      "score": 8,
+      "title": "Intense Action",
+      "body": "Get ready for intense action in this game! The combat mechanics are fluid and satisfying.",
+      "author": "ActionGamer21",
+      "date": "2022-12-27",
+      "userId": 8
     },
     {
-        "gameId": 7,
-        "score": 7,
-        "title": "Decent Adventure",
-        "body": "If you're looking for a decent adventure game with some interesting puzzles, give this game a try.",
-        "author": "AdventureSeeker",
-        "date": "2023-05-04",
-        "userId": 4
+      "gameId": 7,
+      "score": 7,
+      "title": "Decent Adventure",
+      "body": "If you're looking for a decent adventure game with some interesting puzzles, give this game a try.",
+      "author": "AdventureSeeker",
+      "date": "2023-05-04",
+      "userId": 4
     },
     {
-        "gameId": 7,
-        "score": 6,
-        "title": "Underwhelming Story",
-        "body": "While the gameplay is solid, I found the story of this game to be underwhelming and lacking depth.",
-        "author": "StoryCritic",
-        "date": "2022-08-09",
-        "userId": 9
+      "gameId": 7,
+      "score": 6,
+      "title": "Underwhelming Story",
+      "body": "While the gameplay is solid, I found the story of this game to be underwhelming and lacking depth.",
+      "author": "StoryCritic",
+      "date": "2022-08-09",
+      "userId": 9
     },
     {
-        "gameId": 8,
-        "score": 8,
-        "title": "Fantastic Multiplayer",
-        "body": "This game shines in multiplayer mode! It offers thrilling matches and great teamwork opportunities.",
-        "author": "MultiplayerGuru",
-        "date": "2023-06-08",
-        "userId": 1
+      "gameId": 8,
+      "score": 8,
+      "title": "Fantastic Multiplayer",
+      "body": "This game shines in multiplayer mode! It offers thrilling matches and great teamwork opportunities.",
+      "author": "MultiplayerGuru",
+      "date": "2023-06-08",
+      "userId": 1
     },
     {
-        "gameId": 8,
-        "score": 7,
-        "title": "Good Single-player Campaign",
-        "body": "The single-player campaign of this game is enjoyable and provides a solid story-driven experience.",
-        "author": "SoloPlayer87",
-        "date": "2023-04-23",
-        "userId": 2
+      "gameId": 8,
+      "score": 7,
+      "title": "Good Single-player Campaign",
+      "body": "The single-player campaign of this game is enjoyable and provides a solid story-driven experience.",
+      "author": "SoloPlayer87",
+      "date": "2023-04-23",
+      "userId": 2
     },
     {
-        "gameId": 8,
-        "score": 9,
-        "title": "Engaging Gameplay",
-        "body": "The gameplay mechanics of this game are engaging and keep you invested for hours on end.",
-        "author": "GameEnthusiast99",
-        "date": "2022-11-11",
-        "userId": 6
+      "gameId": 8,
+      "score": 9,
+      "title": "Engaging Gameplay",
+      "body": "The gameplay mechanics of this game are engaging and keep you invested for hours on end.",
+      "author": "GameEnthusiast99",
+      "date": "2022-11-11",
+      "userId": 6
     },
     {
-        "gameId": 9,
-        "score": 9,
-        "title": "Mind-Blowing Story",
-        "body": "Prepare for a mind-blowing story in this game! The plot twists and character development are exceptional.",
-        "author": "StoryDevotee",
-        "date": "2023-01-28",
-        "userId": 3
+      "gameId": 9,
+      "score": 9,
+      "title": "Mind-Blowing Story",
+      "body": "Prepare for a mind-blowing story in this game! The plot twists and character development are exceptional.",
+      "author": "StoryDevotee",
+      "date": "2023-01-28",
+      "userId": 3
     },
     {
-        "gameId": 9,
-        "score": 8,
-        "title": "Impressive Soundtrack",
-        "body": "The soundtrack of this game is truly impressive, enhancing the immersive experience of the gameplay.",
-        "author": "MusicLover123",
-        "date": "2022-12-19",
-        "userId": 10
+      "gameId": 9,
+      "score": 8,
+      "title": "Impressive Soundtrack",
+      "body": "The soundtrack of this game is truly impressive, enhancing the immersive experience of the gameplay.",
+      "author": "MusicLover123",
+      "date": "2022-12-19",
+      "userId": 10
     },
     {
-        "gameId": 9,
-        "score": 7,
-        "title": "Solid Gameplay Mechanics",
-        "body": "The gameplay mechanics of this game are solid and offer a satisfying combat and exploration experience.",
-        "author": "GamerFanatic55",
-        "date": "2022-08-31",
-        "userId": 7
+      "gameId": 9,
+      "score": 7,
+      "title": "Solid Gameplay Mechanics",
+      "body": "The gameplay mechanics of this game are solid and offer a satisfying combat and exploration experience.",
+      "author": "GamerFanatic55",
+      "date": "2022-08-31",
+      "userId": 7
     },
     {
-        "gameId": 9,
-        "score": 6,
-        "title": "Technical Issues",
-        "body": "Unfortunately, this game suffers from technical issues that can hinder the overall enjoyment of the gameplay.",
-        "author": "TechWoesGamer",
-        "date": "2023-05-23",
-        "userId": 8
+      "gameId": 9,
+      "score": 6,
+      "title": "Technical Issues",
+      "body": "Unfortunately, this game suffers from technical issues that can hinder the overall enjoyment of the gameplay.",
+      "author": "TechWoesGamer",
+      "date": "2023-05-23",
+      "userId": 8
     },
     {
-        "gameId": 10,
-        "score": 8,
-        "title": "Addictive Multiplayer",
-        "body": "The multiplayer mode of this game is incredibly addictive, providing endless hours of competitive fun.",
-        "author": "CompetitiveGamer88",
-        "date": "2022-12-15",
-        "userId": 5
+      "gameId": 10,
+      "score": 8,
+      "title": "Addictive Multiplayer",
+      "body": "The multiplayer mode of this game is incredibly addictive, providing endless hours of competitive fun.",
+      "author": "CompetitiveGamer88",
+      "date": "2022-12-15",
+      "userId": 5
     },
     {
-        "gameId": 10,
-        "score": 7,
-        "title": "Varied Gameplay",
-        "body": "This game offers varied gameplay options, from intense action to strategic decision-making.",
-        "author": "VersatilePlayer42",
-        "date": "2023-02-15",
-        "userId": 9
+      "gameId": 10,
+      "score": 7,
+      "title": "Varied Gameplay",
+      "body": "This game offers varied gameplay options, from intense action to strategic decision-making.",
+      "author": "VersatilePlayer42",
+      "date": "2023-02-15",
+      "userId": 9
     },
     {
-        "gameId": 10,
-        "score": 9,
-        "title": "Immersive Environments",
-        "body": "The game's environments are beautifully crafted, immersing you in a rich and atmospheric world.",
-        "author": "EnvironmentExplorer",
-        "date": "2023-05-10",
-        "userId": 4
+      "gameId": 10,
+      "score": 9,
+      "title": "Immersive Environments",
+      "body": "The game's environments are beautifully crafted, immersing you in a rich and atmospheric world.",
+      "author": "EnvironmentExplorer",
+      "date": "2023-05-10",
+      "userId": 4
     },
     {
-        "gameId": 10,
-        "score": 6,
-        "title": "Lackluster Story",
-        "body": "While the gameplay is enjoyable, the story of this game falls short and fails to make a lasting impact.",
-        "author": "StoryLover87",
-        "date": "2022-09-07",
-        "userId": 1
+      "gameId": 10,
+      "score": 6,
+      "title": "Lackluster Story",
+      "body": "While the gameplay is enjoyable, the story of this game falls short and fails to make a lasting impact.",
+      "author": "StoryLover87",
+      "date": "2022-09-07",
+      "userId": 1
     }
-],
+  ],
 
-  "users":  [
+  "users": [
     {
       "id": 1,
       "name": "Jonathan Mitchell",
@@ -858,103 +854,186 @@
 
   "news": [
     {
-        "id": 1,
-        "title": "Upcoming DLC for Assassin's Creed Valhalla",
-        "body": "Ubisoft has announced an upcoming DLC...",
-        "author": "GamingNews123",
-        "date": "2023-06-20",
-        "video": "https://example.com/videos/assassins_creed_valhalla_dlc"
+      "id": 1,
+      "title": "Upcoming DLC for Assassin's Creed Valhalla",
+      "body": "Ubisoft has announced an upcoming DLC...",
+      "author": "GamingNews123",
+      "date": "2023-06-20",
+      "video": "https://example.com/videos/assassins_creed_valhalla_dlc"
     },
     {
-        "id": 2,
-        "title": "New Gameplay Trailer for Cyberpunk 2077",
-        "body": "CD Projekt Red has released a new gameplay trailer...",
-        "author": "GameLover99",
-        "date": "2023-06-18",
-        "video": "https://example.com/videos/cyberpunk_2077_gameplay_trailer"
+      "id": 2,
+      "title": "New Gameplay Trailer for Cyberpunk 2077",
+      "body": "CD Projekt Red has released a new gameplay trailer...",
+      "author": "GameLover99",
+      "date": "2023-06-18",
+      "video": "https://example.com/videos/cyberpunk_2077_gameplay_trailer"
     },
     {
-        "id": 3,
-        "title": "Exclusive Interview with the Developers of FIFA 22",
-        "body": "We sat down with the developers of FIFA 22...",
-        "author": "SportsGuru",
-        "date": "2023-06-15",
-        "video": "https://example.com/videos/fifa_22_developer_interview"
+      "id": 3,
+      "title": "Exclusive Interview with the Developers of FIFA 22",
+      "body": "We sat down with the developers of FIFA 22...",
+      "author": "SportsGuru",
+      "date": "2023-06-15",
+      "video": "https://example.com/videos/fifa_22_developer_interview"
     },
     {
-        "id": 4,
-        "title": "Announcement of New Characters in Super Smash Bros. Ultimate",
-        "body": "Nintendo has revealed new characters...",
-        "author": "NintendoFanatic",
-        "date": "2023-06-12",
-        "video": "https://example.com/videos/super_smash_bros_ultimate_new_characters"
+      "id": 4,
+      "title": "Announcement of New Characters in Super Smash Bros. Ultimate",
+      "body": "Nintendo has revealed new characters...",
+      "author": "NintendoFanatic",
+      "date": "2023-06-12",
+      "video": "https://example.com/videos/super_smash_bros_ultimate_new_characters"
     },
     {
-        "id": 5,
-        "title": "Review of Marvel's Spider-Man: Miles Morales",
-        "body": "We review the latest installment in the Spider-Man series...",
-        "author": "SpideyFan",
-        "date": "2023-06-10",
-        "video": "https://example.com/videos/marvels_spiderman_miles_morales_review"
+      "id": 5,
+      "title": "Review of Marvel's Spider-Man: Miles Morales",
+      "body": "We review the latest installment in the Spider-Man series...",
+      "author": "SpideyFan",
+      "date": "2023-06-10",
+      "video": "https://example.com/videos/marvels_spiderman_miles_morales_review"
     },
     {
-        "id": 6,
-        "title": "Behind the Scenes of Call of Duty: Warzone",
-        "body": "Take a look at the making of Call of Duty: Warzone...",
-        "author": "FPSMaster",
-        "date": "2023-06-07",
-        "video": "https://example.com/videos/behind_the_scenes_call_of_duty_warzone"
+      "id": 6,
+      "title": "Behind the Scenes of Call of Duty: Warzone",
+      "body": "Take a look at the making of Call of Duty: Warzone...",
+      "author": "FPSMaster",
+      "date": "2023-06-07",
+      "video": "https://example.com/videos/behind_the_scenes_call_of_duty_warzone"
     },
     {
-        "id": 7,
-        "title": "E3 2023 Highlights and Game Announcements",
-        "body": "Catch up on all the exciting announcements from E3 2023...",
-        "author": "GameEnthusiast",
-        "date": "2023-06-05",
-        "video": "https://example.com/videos/e3_2023_highlights"
+      "id": 7,
+      "title": "E3 2023 Highlights and Game Announcements",
+      "body": "Catch up on all the exciting announcements from E3 2023...",
+      "author": "GameEnthusiast",
+      "date": "2023-06-05",
+      "video": "https://example.com/videos/e3_2023_highlights"
     },
     {
-        "id": 8,
-        "title": "Preview of Apex Legends Season 12: Stormchasers",
-        "body": "Get a sneak peek of the upcoming season in Apex Legends...",
-        "author": "LegendHunter",
-        "date": "2023-06-02",
-        "video": "https://example.com/videos/apex_legends_season_12_preview"
+      "id": 8,
+      "title": "Preview of Apex Legends Season 12: Stormchasers",
+      "body": "Get a sneak peek of the upcoming season in Apex Legends...",
+      "author": "LegendHunter",
+      "date": "2023-06-02",
+      "video": "https://example.com/videos/apex_legends_season_12_preview"
     },
     {
-        "id": 9,
-        "title": "Interview with the Creators of Hades",
-        "body": "We talk to the creators of the popular game Hades...",
-        "author": "UnderworldExplorer",
-        "date": "2023-05-30",
-        "video": "https://example.com/videos/hades_creator_interview"
+      "id": 9,
+      "title": "Interview with the Creators of Hades",
+      "body": "We talk to the creators of the popular game Hades...",
+      "author": "UnderworldExplorer",
+      "date": "2023-05-30",
+      "video": "https://example.com/videos/hades_creator_interview"
     },
     {
-        "id": 10,
-        "title": "New Update for Animal Crossing: New Horizons",
-        "body": "Nintendo has released a major update for Animal Crossing...",
-        "author": "IslandLife",
-        "date": "2023-05-28",
-        "video": "https://example.com/videos/animal_crossing_new_horizons_update"
+      "id": 10,
+      "title": "New Update for Animal Crossing: New Horizons",
+      "body": "Nintendo has released a major update for Animal Crossing...",
+      "author": "IslandLife",
+      "date": "2023-05-28",
+      "video": "https://example.com/videos/animal_crossing_new_horizons_update"
     },
     {
-        "id": 11,
-        "title": "Preview of World of Warcraft: The Burning Crusade Classic",
-        "body": "Get a first look at the upcoming expansion...",
-        "author": "WarcraftAdventurer",
-        "date": "2023-05-25",
-        "video": "https://example.com/videos/wow_burning_crusade_preview"
+      "id": 11,
+      "title": "Preview of World of Warcraft: The Burning Crusade Classic",
+      "body": "Get a first look at the upcoming expansion...",
+      "author": "WarcraftAdventurer",
+      "date": "2023-05-25",
+      "video": "https://example.com/videos/wow_burning_crusade_preview"
     },
     {
-        "id": 12,
-        "title": "Exclusive Interview with the Developers of The Sims 4",
-        "body": "We sit down with the developers of The Sims 4...",
-        "author": "SimmerFan",
-        "date": "2023-05-23",
-        "video": "https://example.com/videos/the_sims_4_developer_interview"
+      "id": 12,
+      "title": "Exclusive Interview with the Developers of The Sims 4",
+      "body": "We sit down with the developers of The Sims 4...",
+      "author": "SimmerFan",
+      "date": "2023-05-23",
+      "video": "https://example.com/videos/the_sims_4_developer_interview"
     }
-]
-  
-
+  ],
+  "pictures": [
+    {
+      "gameId": 11,
+      "picture": "https://cdn1.epicgames.com/400347196e674de89c23cc2a7f2121db/offer/AC%20KINGDOM%20PREORDER_STANDARD%20EDITION_EPIC_Key_Art_Wide_3840x2160-3840x2160-485fe17203671386c71bde8110886c7d.jpg"
+    },
+    {
+      "gameId": 11,
+      "picture": "https://howmanychapters.com/wp-content/uploads/2021/07/how-many-chapters-in-asasins-creed-valhalla.jpg"
+    },
+    {
+      "gameId": 12,
+      "picture": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
+    },
+    {
+      "gameId": 13,
+      "picture": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
+    },
+    {
+      "gameId": 14,
+      "picture": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
+    },
+    {
+      "gameId": 15,
+      "picture": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
+    },
+    {
+      "gameId": 16,
+      "picture": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
+    },
+    {
+      "gameId": 17,
+      "picture": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
+    },
+    {
+      "gameId": 18,
+      "picture": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
+    },
+    {
+      "gameId": 19,
+      "picture": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
+    },
+    {
+      "gameId": 20,
+      "picture": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
+    },
+    {
+      "gameId": 21,
+      "picture": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
+    },
+    {
+      "gameId": 22,
+      "picture": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
+    },
+    {
+      "gameId": 23,
+      "picture": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
+    },
+    {
+      "gameId": 24,
+      "picture": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
+    },
+    {
+      "gameId": 25,
+      "picture": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
+    },
+    {
+      "gameId": 26,
+      "picture": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
+    },
+    {
+      "gameId": 27,
+      "picture": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
+    },
+    {
+      "gameId": 28,
+      "picture": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
+    },
+    {
+      "gameId": 29,
+      "picture": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
+    },
+    {
+      "gameId": 30,
+      "picture": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
+    }
+  ]
 }
-  

@@ -37,7 +37,7 @@ export const Button2 = styled.button`
     & {
   appearance: none;
   backface-visibility: hidden;
-  background-color: rgb(58 62 66);
+  background-color: rgb(58 62 66 / 66%);
   border-radius: 10px;
   border-style: none;
   box-shadow: none;

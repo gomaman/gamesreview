@@ -2,6 +2,7 @@ import React from 'react';
 import BlogContainer from '../../Components/BlogContainer/BlogContainer';
 import './NewsPage.css'
 import Container from '@mui/material/Container';
+import GameContainer from '../../Components/Containers/GameContainer';
 
 const NewsPage = () => {
     return (
@@ -65,6 +66,43 @@ const NewsPage = () => {
                             </div>
                         </BlogContainer>
                     </div>
+                </div>
+            </section>
+
+            <section>
+                <div className='games-list-container'>
+                    <ul className='games-list'>
+                        <li style={{ backgroundImage: `url(https://gaming-cdn.com/images/products/268/orig-fallback-v1/the-witcher-3-wild-hunt-pc-game-gog-com-cover.jpg?v=1650526691)` }}>
+                            <GameContainer 
+                            buttonText="View Game Details">
+                            </GameContainer>
+                        </li>
+                        <li style={{ backgroundImage: `url(https://gaming-cdn.com/images/products/268/orig-fallback-v1/the-witcher-3-wild-hunt-pc-game-gog-com-cover.jpg?v=1650526691)` }}>
+                            <GameContainer 
+                            buttonText="View Game Details">
+                            </GameContainer>
+                        </li>
+                        <li style={{ backgroundImage: `url(https://gaming-cdn.com/images/products/268/orig-fallback-v1/the-witcher-3-wild-hunt-pc-game-gog-com-cover.jpg?v=1650526691)` }}>
+                            <GameContainer 
+                            buttonText="View Game Details">
+                            </GameContainer>
+                        </li>
+                        <li style={{ backgroundImage: `url(https://gaming-cdn.com/images/products/268/orig-fallback-v1/the-witcher-3-wild-hunt-pc-game-gog-com-cover.jpg?v=1650526691)` }}>
+                            <GameContainer 
+                            buttonText="View Game Details">
+                            </GameContainer>
+                        </li>
+                        <li style={{ backgroundImage: `url(https://gaming-cdn.com/images/products/268/orig-fallback-v1/the-witcher-3-wild-hunt-pc-game-gog-com-cover.jpg?v=1650526691)` }}>
+                            <GameContainer 
+                            buttonText="View Game Details">
+                            </GameContainer>
+                        </li>
+                        <li style={{ backgroundImage: `url(https://gaming-cdn.com/images/products/268/orig-fallback-v1/the-witcher-3-wild-hunt-pc-game-gog-com-cover.jpg?v=1650526691)` }}>
+                            <GameContainer 
+                            buttonText="View Game Details">
+                            </GameContainer>
+                        </li>
+                    </ul>
                 </div>
             </section>
         </Container>
