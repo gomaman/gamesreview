@@ -8,87 +8,69 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const UserReviewForm = ({ resetUserReview }) => {
     const { id } = useParams();
-
-    const gameId = id
+    const gameId = id;
 
     const [body, setBody] = useState('');
     const [score, setScore] = useState('');
     const [date, setDate] = useState('');
-    const [user, setUser] = useState('')
-    const [users, setUsers] = useState('')
-    const [author, setAuthor] = useState('')
-    const [userId, setUserId] = useState(user)
-    const [title, setTitle] = useState('')
-    const [reviews, setReviews] = useState('')
-    const [lastReview, setLastReview] = useState('')
+    const [users, setUsers] = useState('');
+    const [author, setAuthor] = useState('');
+    const [userId, setUserId] = useState('');
+    const [title, setTitle] = useState('');
+    const [reviews, setReviews] = useState('');
+    const [lastReview, setLastReview] = useState('');
+
+    const [formSubmitted, setFormSubmitted] = useState(false);
 
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        if (!author) {
-            return;
-        }
+        setFormSubmitted(true);
 
         setTitle('');
         setBody('');
         setScore('');
         setDate('');
-        setUserId('');
+        setAuthor('');
 
-        console.log("gameId", Number(gameId));
-        console.log("Score:", Number(score));
-        console.log("Title:", title);
-        console.log("Body:", body);
-        console.log("Author:", author);
-        console.log("Date:", date);
-        console.log("userId", Number(userId));
-
-        console.log(lastReview.id + 1)
-
+        const newReview = {
+            gameId: Number(gameId),
+            score: Number(score),
+            title,
+            body,
+            author,
+            date,
+            userId: Number(userId),
+            id: lastReview.id + 1,
+        };
 
         axios
-            .post(`${API_URL}/userReviews`, {
-                gameId: Number(gameId),
-                score: Number(score),
-                title,
-                body,
-                author,
-                date,
-                userId: Number(userId),
-                id: lastReview.id + 1,
-            })
+            .post(`${API_URL}/userReviews`, newReview)
             .then((response) => {
-                console.log(response.data);
                 resetUserReview();
-              })
+                setFormSubmitted(false);
+            })
             .catch(err => toast.error(err.message));
     };
 
-    
     useEffect(() => {
-        axios
-          .get(API_URL + `/userReviews`)
-          .then((res) => {
-            const gameData = res.data;
-            const lastReviewData = gameData[gameData.length - 1];
-            setReviews(gameData);
-            setLastReview(lastReviewData);
-      
-            // if (gameData.userReviews.length > 0) {
-            //   const lastReviewData = gameData.userReviews[gameData.userReviews.length - 1];
-            //   setLastReview(lastReviewData);
-            // } else {
-            //   setLastReview(null);
-            // }
-          })
-          .catch((err) => toast.error(err.message));
-      }, [author]);
-      
+        if (formSubmitted) {
+            axios
+                .get(API_URL + `/userReviews`)
+                .then((res) => {
+                    const gameData = res.data;
+                    const lastReviewData = gameData[gameData.length - 1];
+                    setReviews(gameData);
+                    setLastReview(lastReviewData);
+                })
+                .catch((err) => toast.error(err.message));
+        }
+    }, [userId, formSubmitted]);
 
     useEffect(() => {
         axios.get(API_URL + `/users/${userId}`)
             .then(res => {
-                setAuthor(res.data.username);
+                setAuthor(res.data.name);
             })
             .catch(err => toast.error(err.message));
     }, [userId]);
@@ -97,12 +79,10 @@ const UserReviewForm = ({ resetUserReview }) => {
         axios.get(API_URL + `/users`)
             .then(res => {
                 setUsers(res.data);
-                setUser(res.data[0].id)
+                setUserId(res.data[0].id);
             })
             .catch(err => toast.error(err.message));
-    }, [id]);
-
-
+    }, []);
 
     if (!users) {
         return <p>Loading...</p>;
