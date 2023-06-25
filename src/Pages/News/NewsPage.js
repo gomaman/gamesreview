@@ -13,7 +13,6 @@ import AllNewsContainer from '../../Components/Containers/News/AllNewsContainer'
 
 
 const NewsPage = () => {
-
     return (
         <Container>
             <NewsContainer>
