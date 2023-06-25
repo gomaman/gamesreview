@@ -18,6 +18,7 @@ const NewsPage = () => {
 
     const [news, setNews] = useState()
     const [firstNews, setFirstNews] = useState()
+    const [afterFirstNews, setAfterFirstNews] = useState()
 
     useEffect(() => {
         axios.get(API_URL + `/news`)
@@ -25,6 +26,8 @@ const NewsPage = () => {
                 const newsData = res.data;
                 setNews(newsData);
                 setFirstNews(newsData[0])
+                setAfterFirstNews(newsData.slice(1, 4))
+
             })
             .catch(err => toast.error(err.message))
     }, []);
@@ -38,7 +41,7 @@ const NewsPage = () => {
             <Container>
                 <NewsContainer>
                     <LargeNews firstNews={firstNews}></LargeNews>
-                    <SmallNews></SmallNews>
+                    <SmallNews afterFirstNews={afterFirstNews}></SmallNews>
                 </NewsContainer>
                 <NewsBanner></NewsBanner>
                 <AllNewsContainer>
