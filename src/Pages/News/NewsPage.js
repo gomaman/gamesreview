@@ -6,15 +6,10 @@ import LargeNews from '../../Components/Containers/News/LargeNews';
 import SmallNews from '../../Components/Containers/News/SmallNews';
 import NewsBanner from './NewsBanner';
 import NewsContainer from '../../Components/Containers/News/StyledNewsContainer';
-import styled from 'styled-components';
+import NewsItem from '../../Components/Containers/News/NewsItem';
+import AllNewsContainer from '../../Components/Containers/News/AllNewsContainer';
 
 
-
-const AllNewsContainer = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-`;
 
 
 const NewsPage = () => {
@@ -26,7 +21,15 @@ const NewsPage = () => {
                 <SmallNews></SmallNews>
             </NewsContainer>
             <NewsBanner></NewsBanner>
-            <AllNewsContainer></AllNewsContainer>
+            <AllNewsContainer>
+                <NewsItem></NewsItem>
+                <NewsItem></NewsItem>
+                <NewsItem></NewsItem>
+                <NewsItem></NewsItem>
+                <NewsItem></NewsItem>
+                <NewsItem></NewsItem>
+                <NewsItem></NewsItem>
+            </AllNewsContainer>
         </Container>
     )
 }

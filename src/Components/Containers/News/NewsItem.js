@@ -1,9 +1,9 @@
 import React from 'react';
-import NewsItemContainer from './NewsItemContainer';
+import StyledNewsItem from './StyledNewsItem';
 
 const NewsItem = () => {
   return (
-    <NewsItemContainer className="blog-container big">
+    <StyledNewsItem className="blog-container big">
       <div className="blog-img-container">
         <img src="https://assets2.ignimgs.com/2014/06/09/e3-press-kit-10-wm-forza-horizon2jpg-e0e9d3.jpg?crop=16%3A9&width=282" alt="Blog Image" />
       </div>
@@ -15,7 +15,7 @@ const NewsItem = () => {
           <p>Release Date: June 1, 2023</p>
         </div>
       </div>
-    </NewsItemContainer>
+    </StyledNewsItem>
   );
 };
 
