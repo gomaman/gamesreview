@@ -18,6 +18,7 @@ const GamePage = () => {
     const [review, setReview] = useState(null);
     const [userReview, setUserReview] = useState([]);
     const [reviewRender, setReviewRender] = useState(false)
+    const [editStatus, setEditStatus] = useState(false)
 
     const { id } = useParams();
 
@@ -44,6 +45,10 @@ const GamePage = () => {
         setReviewRender(prevReviewRender => !prevReviewRender);
     };
 
+    const resetEditStatus = () => {
+        setEditStatus(prevEditStatus => !prevEditStatus);
+    };
+
     useEffect(() => {
         axios.get(API_URL + `/games/${id}?_embed=userReviews`)
             .then(res => {
@@ -55,17 +60,29 @@ const GamePage = () => {
 
     const deleteHandler = (reviewId) => {
         axios
-          .delete(API_URL + `/userReviews/${reviewId}`)
+            .delete(API_URL + `/userReviews/${reviewId}`)
+            .then((res) => {
+                toast.success('Review deleted successfully');
+                resetUserReview();
+            })
+            .catch((error) => {
+                toast.error('Failed to delete the review');
+            });
+    };
+
+    const editSaveHandler = (updatedReview) => {
+        axios
+          .put(`${API_URL}/userReviews/${updatedReview.id}`, updatedReview)
           .then((res) => {
-            toast.success('Review deleted successfully');
+            toast.success('Review updated successfully');
             resetUserReview();
           })
           .catch((error) => {
-            toast.error('Failed to delete the review');
+            toast.error('Failed to update the review');
           });
       };
 
-      
+
 
     if (!game || !picture || !review || !userReview) {
         return <p>Loading...</p>;
@@ -106,7 +123,7 @@ const GamePage = () => {
                 <div>
                     {userReview ? (
                         <>
-                            <GameUserReview userReview={userReview} deleteHandler={deleteHandler} />
+                            <GameUserReview userReview={userReview} deleteHandler={deleteHandler} editSaveHandler={editSaveHandler}/>
                         </>
                     ) : (
                         <p>No user reviews available.</p>
@@ -126,7 +143,7 @@ const GamePage = () => {
                     theme="light"
                 />
 
-                <UserReviewForm resetUserReview={resetUserReview} />
+                <UserReviewForm resetUserReview={resetUserReview} resetEditStatus={resetEditStatus} />
             </section>
         </Container>
     );

@@ -9,7 +9,7 @@ import CurrentDateTime from '../../Components/Date/Date';
 
 
 
-const UserReviewForm = ({ resetUserReview }) => {
+const UserReviewForm = ({ resetUserReview, resetEditStatus  }) => {
     const { id } = useParams();
     const gameId = id;
 
@@ -29,7 +29,7 @@ const UserReviewForm = ({ resetUserReview }) => {
         e.preventDefault();
 
         setFormSubmitted(true);
-
+        resetEditStatus()
         console.log()
 
         setTitle('');
@@ -50,12 +50,13 @@ const UserReviewForm = ({ resetUserReview }) => {
         };
 
         axios
-            .post(`${API_URL}/userReviews`, newReview)
-            .then((response) => {
-                resetUserReview();
-                setFormSubmitted(false);
-            })
-            .catch(err => toast.error(err.message));
+        .post(`${API_URL}/userReviews`, newReview)
+        .then((response) => {
+          resetUserReview();
+          setFormSubmitted(false);
+        //   editSaveHandler(newReview);
+        })
+        .catch((err) => toast.error(err.message));
     };
 
     useEffect(() => {
@@ -88,6 +89,8 @@ const UserReviewForm = ({ resetUserReview }) => {
             })
             .catch(err => toast.error(err.message));
     }, []);
+
+
 
     if (!users) {
         return <p>Loading...</p>;
@@ -179,3 +182,26 @@ const UserReviewForm = ({ resetUserReview }) => {
 };
 
 export default UserReviewForm;
+
+
+
+
+
+// if(edit) {
+//     axios 
+//         .put(`${API_URL}/userReviews/${reviewId}`, newReview)
+//         .then((response) => {
+//             resetUserReview();
+//             setFormSubmitted(false);
+//             setEdit(false);
+//         })
+//         .catch((err) => toast.error(err.message))
+// } else {
+//     axios
+//     .post(`${API_URL}/userReviews`, newReview)
+//     .then((response) => {
+//         resetUserReview();
+//         setFormSubmitted(false);
+//     })
+//     .catch(err => toast.error(err.message));
+// }
