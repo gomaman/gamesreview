@@ -17,12 +17,14 @@ import AllNewsContainer from '../../Components/Containers/News/AllNewsContainer'
 const NewsPage = () => {
 
     const [news, setNews] = useState()
+    const [firstNews, setFirstNews] = useState()
 
     useEffect(() => {
         axios.get(API_URL + `/news`)
             .then(res => {
                 const newsData = res.data;
                 setNews(newsData);
+                setFirstNews(newsData[0])
             })
             .catch(err => toast.error(err.message))
     }, []);
@@ -35,7 +37,7 @@ const NewsPage = () => {
         return (
             <Container>
                 <NewsContainer>
-                    <LargeNews></LargeNews>
+                    <LargeNews firstNews={firstNews}></LargeNews>
                     <SmallNews></SmallNews>
                 </NewsContainer>
                 <NewsBanner></NewsBanner>
