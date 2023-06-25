@@ -55,7 +55,7 @@ const GamePage = () => {
                 setUserReview(res.data.userReviews);
             })
             .catch(err => toast.error(err.message))
-    }, [id, reviewRender]);
+    }, [id, reviewRender, editStatus]);
 
 
     const deleteHandler = (reviewId) => {
@@ -64,6 +64,7 @@ const GamePage = () => {
             .then((res) => {
                 toast.success('Review deleted successfully');
                 resetUserReview();
+
             })
             .catch((error) => {
                 toast.error('Failed to delete the review');
@@ -71,11 +72,11 @@ const GamePage = () => {
     };
 
     const editSaveHandler = (updatedReview) => {
+
         axios
           .put(`${API_URL}/userReviews/${updatedReview.id}`, updatedReview)
           .then((res) => {
             toast.success('Review updated successfully');
-            resetUserReview();
           })
           .catch((error) => {
             toast.error('Failed to update the review');

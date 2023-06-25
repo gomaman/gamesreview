@@ -1033,12 +1033,42 @@
     {
       "gameId": 1,
       "score": 3,
-      "title": "asdasdsa",
+      "title": "asdasdsaSSSSSSSS5",
       "body": "test",
       "author": "Jonathan Mitchell",
       "date": "2023-06-25 17:54",
       "userId": 1,
       "id": 41
+    },
+    {
+      "gameId": 1,
+      "score": 4,
+      "title": "TESTSSS",
+      "body": "TEST",
+      "author": "Christopher Turner",
+      "date": "2023-06-25 18:07",
+      "userId": 3,
+      "id": 42
+    },
+    {
+      "gameId": 1,
+      "score": 0,
+      "title": "",
+      "body": "",
+      "author": "Jonathan Mitchell",
+      "date": "2023-06-25 18:26",
+      "userId": 1,
+      "id": 43
+    },
+    {
+      "gameId": 1,
+      "score": 5,
+      "title": "TEST",
+      "body": "TEST",
+      "author": "",
+      "date": "2023-06-25 18:30",
+      "userId": 1,
+      "id": 44
     }
   ],
   "users": [

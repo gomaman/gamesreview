@@ -6,7 +6,7 @@ import { toast } from 'react-toastify';
 
 const GameUserReview = ({ userReview, deleteHandler, editSaveHandler }) => {
     const [editedReview, setEditedReview] = useState(null);
-    const [formSubmitted, setFormSubmitted] = useState(false);
+    const [reviewEdited, setReviewEdited] = useState(false);
 
 
     const editPostHandler = (review) => {
@@ -27,9 +27,8 @@ const GameUserReview = ({ userReview, deleteHandler, editSaveHandler }) => {
                 updatedUserReview[editedIndex] = editedReview;
 
                 console.log(updatedUserReview[editedIndex]);
-                editSaveHandler()
+                editSaveHandler(editedReview);
 
-                // setEditedReview(null);
             })
             .catch((err) => toast.error(err.message));
     };
