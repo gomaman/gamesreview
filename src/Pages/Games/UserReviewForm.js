@@ -14,9 +14,10 @@ const UserReviewForm = ({ resetUserReview }) => {
     const [body, setBody] = useState('');
     const [score, setScore] = useState('');
     const [date, setDate] = useState('');
+    const [user, setUser] = useState('')
     const [users, setUsers] = useState('')
     const [author, setAuthor] = useState('')
-    const [userId, setUserId] = useState('')
+    const [userId, setUserId] = useState(user)
     const [title, setTitle] = useState('')
     const [reviews, setReviews] = useState('')
     const [lastReview, setLastReview] = useState('')
@@ -42,7 +43,7 @@ const UserReviewForm = ({ resetUserReview }) => {
         console.log("Date:", date);
         console.log("userId", Number(userId));
 
-        console.log(lastReview)
+        console.log(lastReview.id + 1)
 
 
         axios
@@ -66,20 +67,22 @@ const UserReviewForm = ({ resetUserReview }) => {
     
     useEffect(() => {
         axios
-          .get(API_URL + `/games/${gameId}?_embed=userReviews`)
+          .get(API_URL + `/userReviews`)
           .then((res) => {
             const gameData = res.data;
-            setReviews(gameData.userReviews);
+            const lastReviewData = gameData[gameData.length - 1];
+            setReviews(gameData);
+            setLastReview(lastReviewData);
       
-            if (gameData.userReviews.length > 0) {
-              const lastReviewData = gameData.userReviews[gameData.userReviews.length - 1];
-              setLastReview(lastReviewData);
-            } else {
-              setLastReview(null);
-            }
+            // if (gameData.userReviews.length > 0) {
+            //   const lastReviewData = gameData.userReviews[gameData.userReviews.length - 1];
+            //   setLastReview(lastReviewData);
+            // } else {
+            //   setLastReview(null);
+            // }
           })
           .catch((err) => toast.error(err.message));
-      }, [gameId]);
+      }, [author]);
       
 
     useEffect(() => {
@@ -94,6 +97,7 @@ const UserReviewForm = ({ resetUserReview }) => {
         axios.get(API_URL + `/users`)
             .then(res => {
                 setUsers(res.data);
+                setUser(res.data[0].id)
             })
             .catch(err => toast.error(err.message));
     }, [id]);

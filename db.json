@@ -980,6 +980,46 @@
       "date": "2023-06-13",
       "userId": 2,
       "id": 34
+    },
+    {
+      "gameId": 1,
+      "score": 5,
+      "title": "TEST",
+      "body": "TEST",
+      "author": "ithompson92",
+      "date": "2023-06-18",
+      "userId": 2,
+      "id": 35
+    },
+    {
+      "gameId": 1,
+      "score": 5,
+      "title": "TEST",
+      "body": "TEST",
+      "author": "Isabella Thompson",
+      "date": "2023-06-12",
+      "userId": 2,
+      "id": 36
+    },
+    {
+      "gameId": 4,
+      "score": 4,
+      "title": "TEST8789789789",
+      "body": "TEST",
+      "author": "ithompson92",
+      "date": "2023-06-19",
+      "userId": 2,
+      "id": 37
+    },
+    {
+      "gameId": 4,
+      "score": 5,
+      "title": "TEST21321BIG",
+      "body": "TEST21321BIG",
+      "author": "ithompson92",
+      "date": "2023-06-12",
+      "userId": 2,
+      "id": 38
     }
   ],
   "users": [
