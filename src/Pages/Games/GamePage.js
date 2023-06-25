@@ -50,9 +50,22 @@ const GamePage = () => {
                 setUserReview(res.data.userReviews);
             })
             .catch(err => toast.error(err.message))
-    }, [id,reviewRender ]);
+    }, [id, reviewRender]);
 
 
+    const deleteHandler = (reviewId) => {
+        axios
+          .delete(API_URL + `/userReviews/${reviewId}`)
+          .then((res) => {
+            toast.success('Review deleted successfully');
+            resetUserReview();
+          })
+          .catch((error) => {
+            toast.error('Failed to delete the review');
+          });
+      };
+
+      
 
     if (!game || !picture || !review || !userReview) {
         return <p>Loading...</p>;
@@ -92,7 +105,9 @@ const GamePage = () => {
 
                 <div>
                     {userReview ? (
-                        <GameUserReview userReview={userReview} />
+                        <>
+                            <GameUserReview userReview={userReview} deleteHandler={deleteHandler} />
+                        </>
                     ) : (
                         <p>No user reviews available.</p>
                     )}

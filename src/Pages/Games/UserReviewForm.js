@@ -5,6 +5,9 @@ import axios from "axios";
 import { API_URL } from '../../Config/LinksConfig';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import CurrentDateTime from '../../Components/Date/Date';
+
+
 
 const UserReviewForm = ({ resetUserReview }) => {
     const { id } = useParams();
@@ -27,6 +30,8 @@ const UserReviewForm = ({ resetUserReview }) => {
 
         setFormSubmitted(true);
 
+        console.log()
+
         setTitle('');
         setBody('');
         setScore('');
@@ -39,7 +44,7 @@ const UserReviewForm = ({ resetUserReview }) => {
             title,
             body,
             author,
-            date,
+            date: CurrentDateTime(),
             userId: Number(userId),
             id: lastReview.id + 1,
         };
@@ -152,7 +157,7 @@ const UserReviewForm = ({ resetUserReview }) => {
                         onChange={(e) => setScore(e.target.value)}
                     />
                 </div>
-                <div className="form-group">
+                {/* <div className="form-group">
                     <label className="label" htmlFor="date">
                         Date:
                     </label>
@@ -164,7 +169,7 @@ const UserReviewForm = ({ resetUserReview }) => {
                         value={date}
                         onChange={(e) => setDate(e.target.value)}
                     />
-                </div>
+                </div> */}
                 <button className="submit-button" type="submit">
                     Submit Review
                 </button>
