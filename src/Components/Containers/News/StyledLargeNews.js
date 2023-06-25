@@ -1,27 +1,27 @@
 import styled from 'styled-components';
 
 const StyledLargeNews = styled.div`
-  .left-blog-container {
+  background-color: rgb(40, 48, 68);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  transition: box-shadow 0.2s ease-in-out;
+  height: 100%;
+
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.671) 0px 3px 8px;
+  }
+
+  &.big {
     display: grid;
     grid-template-rows: 2fr 1fr;
   }
 
-  .left-blog-container .blog-img-container {
-    height: 100%;
+  &.small {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
+`;
 
-  .left-blog-container .blog-img-container img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
-
-  .left-blog-container .main-blog-content-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding-left: 10px;
-  }
-  `
-
-  export default StyledLargeNews
+export default StyledLargeNews;

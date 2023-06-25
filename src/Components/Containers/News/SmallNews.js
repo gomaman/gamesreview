@@ -1,6 +1,4 @@
-import React from 'react';
-import SmallNewsContainer from './StyledSmallNews';
-
+import SmallNewsContainer from "./StyledSmallNews";
 
 
 const SmallNews = () => {
@@ -19,6 +17,7 @@ const SmallNews = () => {
         </div>
       </div>
     </SmallNewsContainer>
+
   );
 };
 
