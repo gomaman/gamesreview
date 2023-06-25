@@ -13,10 +13,6 @@ export const NAV_ITEMS = [
     },
     {
         href: "/news",
-        text: "Albums"
-    },
-    {
-        href: "/news",
         text: "News"
     },
     {

@@ -5,6 +5,7 @@ import GamesPage from "../Pages/Games/GamesPage";
 import NewsPage from "../Pages/News/NewsPage";
 import ReviewsPage from "../Pages/Reviews/ReviewsPage";
 import SearchPage from "../Pages/Search/SearchPage";
+import SingleNewsPage from "../Pages/News/SingleNewsPage";
 
 import GamePage from "../Pages/Games/GamePage";
 
@@ -22,13 +23,8 @@ function App() {
         <Route path='/games' element={<GamesPage />} ></Route>
         <Route path='/games/game/:id' element={<GamePage />} ></Route>
 
-
-
-
         <Route path='/news' element={<NewsPage />} ></Route>
-
-
-
+        <Route path='/news/:id' element={<SingleNewsPage />} ></Route>
 
 
         <Route path='/reviews' element={<ReviewsPage />} ></Route>
