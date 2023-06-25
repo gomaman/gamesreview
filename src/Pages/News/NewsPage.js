@@ -1,4 +1,9 @@
 import React from 'react';
+import { useState } from 'react';
+import { API_URL } from '../../Config/LinksConfig';
+import { toast, ToastContainer } from 'react-toastify';
+import axios from 'axios';
+import { useEffect } from 'react';
 
 // import './NewsPage.css'
 import Container from '@mui/material/Container';
@@ -9,28 +14,40 @@ import NewsContainer from '../../Components/Containers/News/StyledNewsContainer'
 import NewsItem from '../../Components/Containers/News/NewsItem';
 import AllNewsContainer from '../../Components/Containers/News/AllNewsContainer';
 
-
-
-
 const NewsPage = () => {
-    return (
-        <Container>
-            <NewsContainer>
-                <LargeNews></LargeNews>
-                <SmallNews></SmallNews>
-            </NewsContainer>
-            <NewsBanner></NewsBanner>
-            <AllNewsContainer>
-                <NewsItem></NewsItem>
-                <NewsItem></NewsItem>
-                <NewsItem></NewsItem>
-                <NewsItem></NewsItem>
-                <NewsItem></NewsItem>
-                <NewsItem></NewsItem>
-                <NewsItem></NewsItem>
-            </AllNewsContainer>
-        </Container>
-    )
+
+    const [news, setNews] = useState()
+
+    useEffect(() => {
+        axios.get(API_URL + `/news`)
+            .then(res => {
+                const newsData = res.data;
+                setNews(newsData);
+            })
+            .catch(err => toast.error(err.message))
+    }, []);
+
+    if(!news) {
+        return (
+            <h1>Loading...</h1>
+        )
+    }   else {
+        return (
+            <Container>
+                <NewsContainer>
+                    <LargeNews></LargeNews>
+                    <SmallNews></SmallNews>
+                </NewsContainer>
+                <NewsBanner></NewsBanner>
+                <AllNewsContainer>
+                    {news.map(item => (
+                        <NewsItem key={item.id} newsData={item} />
+                    ))}
+                </AllNewsContainer>
+            </Container>
+        )
+    }
+
 }
 
 
