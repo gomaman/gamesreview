@@ -5,7 +5,6 @@ import { toast, ToastContainer } from 'react-toastify';
 import axios from 'axios';
 import { useEffect } from 'react';
 
-// import './NewsPage.css'
 import Container from '@mui/material/Container';
 import LargeNews from '../../Components/Containers/News/LargeNews';
 import SmallNews from '../../Components/Containers/News/SmallNews';
@@ -52,7 +51,6 @@ const NewsPage = () => {
             </Container>
         )
     }
-
 }
 
 

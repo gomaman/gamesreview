@@ -9,6 +9,10 @@ const StyledLargeNews = styled.div`
   transition: box-shadow 0.2s ease-in-out;
   height: 100%;
 
+  & img {
+    border-radius: 5px;
+  }
+
   &:hover {
     box-shadow: rgba(0, 0, 0, 0.671) 0px 3px 8px;
   }
@@ -21,6 +25,16 @@ const StyledLargeNews = styled.div`
   &.small {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  a.big-news-link {
+    text-decoration: none;
+    color: rgb(254, 249, 253);
+    cursor: pointer;
+  }
+
+  a.big-news-link:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   }
 `;
 

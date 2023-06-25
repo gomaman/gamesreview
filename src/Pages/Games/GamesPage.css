@@ -17,10 +17,6 @@ p {
     height: 100%;
   }
 
-  /* .blog-container:hover {
-    box-shadow: rgba(0, 0, 0, 0.671) 0px 3px 8px;
-  } */
-  
 .right-blog-container {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
@@ -31,7 +27,6 @@ p {
 section.hero-section {
     margin-top: 50px;
 }
-
  
 .small {
     display: flex;
@@ -41,12 +36,6 @@ section.hero-section {
     background-color: rgb(32, 38, 52);
     color: rgb(254,255,254)
   }
-
-
-  .blog-container.big {
-    display: grid;
-    grid-template-rows: 2fr 1fr;
-}
 
   .blog-container.big img{
     height: 100%;

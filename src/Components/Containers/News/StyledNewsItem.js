@@ -1,5 +1,4 @@
-import styled from "styled-components";
-
+import styled from 'styled-components';
 
 const StyledNewsItem = styled.div`
   background-color: rgb(40, 48, 68);
@@ -12,16 +11,6 @@ const StyledNewsItem = styled.div`
 
   &:hover {
     box-shadow: rgba(0, 0, 0, 0.671) 0px 3px 8px;
-  }
-
-  &.big {
-    display: grid;
-    grid-template-rows: 2fr 1fr;
-  }
-
-  &.small {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
   }
 
   .blog-img-container {
@@ -65,6 +54,16 @@ const StyledNewsItem = styled.div`
         margin: 0;
         font-size: 14px;
       }
+    }
+  }
+
+  a.news-item-link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     }
   }
 `;
