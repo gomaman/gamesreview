@@ -1,49 +1,56 @@
 
-import React, { useState } from 'react'
-import StyledNewsItem from '../News/StyledNewsItem';
+import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import { toast } from 'react-toastify';
-import { useEffect } from 'react';
 import { API_URL } from '../../../Config/LinksConfig';
+import CommentCard from '../SingleNews/SingleCommentCard';
 
 const NewsComments = () => {
+  const { id } = useParams();
+  const [newsData, setNewsData] = useState({});
+  const [comments, setComments] = useState([]);
+  const [userId, setUserId] = useState('');
+  const [username, setUsername] = useState('')
 
-    const { id } = useParams();
+  useEffect(() => {
+    axios
+      .get(API_URL + `/news/${id}?_embed=comments`)
+      .then((res) => {
+        const newsData = res.data;
+        setNewsData(newsData);
+        setComments(newsData.comments);
+        if (newsData.comments.length > 0) {
+          setUserId(newsData.comments[0].userId);
+        }
+      })
+      .catch((err) => toast.error(err.message));
+  }, [id]);
 
-    const [newsData, setNewsData] = useState({})
-    const [comments, setComments] = useState()
-    const [userId, setUserId] = useState()
-    
-    // http://localhost:3000/users/1?_embed=comments
-
-    useEffect(() => {
-        axios.get(API_URL + `/news/${id}?_embed=comments`)
-            .then(res => {
-                const newsData = res.data;
-                console.log(newsData)
-                setNewsData(newsData)
-                setComments(newsData.comments);
-                setUserId(newsData.comments.userId)
-            })
-            .catch(err => toast.error(err.message))
-    }, [id]);
-
+  useEffect(() => {
+    if (userId) {
+      axios
+        .get(API_URL + `/users/${userId}?_embed=comments`)
+        .then((res) => {
+          const userData = res.data;
+          console.log(userData)
+          setUsername(userData.username);
+        })
+        .catch((err) => toast.error(err.message));
+    }
+  }, [userId]);
 
   return (
-    <div>
-        <ul>
-            <li>{comments[0].body}</li>
-            <li>{comments[0].userId}</li>
-        </ul>
-    </div>
-  )
-}
+    <>
+      {comments.map((comment) => (
+        <CommentCard key={comment.id}>
+          <h3>{comment.body}</h3>
+          <p>Author: {username}</p>
+          <p>Date: {comment.date}</p>
+        </CommentCard>
+      ))}
+    </>
+  );
+};
 
-export default NewsComments
-
-
-for (let i=0; i<10; i++) {
-    console.log(i+5)
-}
-
+export default NewsComments;
