@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="App">
 
-    <NavigationGenerator></NavigationGenerator>
+      <NavigationGenerator></NavigationGenerator>
       <Routes>
         <Route path='/' element={<HomePage />} ></Route>
         <Route path='/games' element={<GamesPage />} ></Route>
@@ -26,20 +26,11 @@ function App() {
         <Route path='/news' element={<NewsPage />} ></Route>
         <Route path='/news/:id' element={<SingleNewsPage />} ></Route>
 
-
         <Route path='/reviews' element={<ReviewsPage />} ></Route>
         <Route path='/reviews/:id' element={<ReviewItem />} ></Route>
 
-
         {/* <Route path='/search' element={<SearchPage />} ></Route> */}
-
-
-
-
       </Routes>
-
-
-
     </div>
   );
 }

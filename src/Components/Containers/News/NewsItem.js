@@ -4,15 +4,8 @@ import { Link } from 'react-router-dom';
 
 const NewsItem = ({ newsData }) => {
 
-    // console.log(newsData)
 
     const { title, body, author, date, thumbnail, } = newsData
-
-    // console.log(title)
-    // console.log(body)
-    // console.log(author)
-    // console.log(date)
-    // console.log(thumbnail)
 
     const truncatedBody = body.substring(0, 180);
     const finalBody = `${truncatedBody} ...`

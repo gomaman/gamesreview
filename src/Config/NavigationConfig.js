@@ -17,4 +17,3 @@ export const NAV_ITEMS = [
     },
 ]
 
-// export const API_URL = 'http://localhost:3000'

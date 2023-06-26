@@ -9,8 +9,7 @@ import GameUserReview from "./GameUserReview";
 import UserReviewForm from "./UserReviewForm";
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import './GamesPage.css';
-import './GamePage.css';
+
 
 const GamePage = () => {
     const [game, setGame] = useState(null);
@@ -74,14 +73,14 @@ const GamePage = () => {
     const editSaveHandler = (updatedReview) => {
 
         axios
-          .put(`${API_URL}/userReviews/${updatedReview.id}`, updatedReview)
-          .then((res) => {
-            toast.success('Review updated successfully');
-          })
-          .catch((error) => {
-            toast.error('Failed to update the review');
-          });
-      };
+            .put(`${API_URL}/userReviews/${updatedReview.id}`, updatedReview)
+            .then((res) => {
+                toast.success('Review updated successfully');
+            })
+            .catch((error) => {
+                toast.error('Failed to update the review');
+            });
+    };
 
 
 
@@ -124,7 +123,7 @@ const GamePage = () => {
                 <div>
                     {userReview ? (
                         <>
-                            <GameUserReview userReview={userReview} deleteHandler={deleteHandler} editSaveHandler={editSaveHandler}/>
+                            <GameUserReview userReview={userReview} deleteHandler={deleteHandler} editSaveHandler={editSaveHandler} />
                         </>
                     ) : (
                         <p>No user reviews available.</p>
@@ -152,10 +151,3 @@ const GamePage = () => {
 
 export default GamePage;
 
-
-
-const Test = () => {
-    return (
-        <h1>Hello World</h1>
-    )
-}

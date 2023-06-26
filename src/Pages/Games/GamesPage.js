@@ -25,8 +25,6 @@ const GamesPage = () => {
             })
     }, [])
 
-
-
     return (
 
         <Container className="games-page-container">
