@@ -6,7 +6,7 @@ import NewsPage from "../Pages/News/NewsPage";
 import ReviewsPage from "../Pages/Reviews/ReviewsPage";
 import SearchPage from "../Pages/Search/SearchPage";
 import SingleNewsPage from "../Pages/News/SingleNewsPage";
-
+import ReviewItem from "../Components/Containers/Reviews/ReviewItem";
 import GamePage from "../Pages/Games/GamePage";
 
 function App() {
@@ -28,6 +28,7 @@ function App() {
 
 
         <Route path='/reviews' element={<ReviewsPage />} ></Route>
+        {/* <Route path='/review/:id' element={<ReviewItem />} ></Route> */}
 
 
 
