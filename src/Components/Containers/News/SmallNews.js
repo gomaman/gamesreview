@@ -2,6 +2,8 @@ import SmallNewsContainer from "./StyledSmallNews";
 import { Link } from "react-router-dom";
 
 const SmallNews = ({ afterFirstNews }) => {
+
+  
   return (
     <SmallNewsContainer>
       {afterFirstNews.map((item) => {

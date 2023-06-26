@@ -151,3 +151,11 @@ const GamePage = () => {
 };
 
 export default GamePage;
+
+
+
+const Test = () => {
+    return (
+        <h1>Hello World</h1>
+    )
+}
