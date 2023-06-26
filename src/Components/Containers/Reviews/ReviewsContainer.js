@@ -79,6 +79,7 @@ const ReviewCard = styled.div`
 const ReviewsContainer = () => {
     const [dataSet, setDataSet] = useState([]);
     const [reviewStatus, setReviewStatus] = useState(false)
+    const [newReview, setNewReview] = useState(false)
 
     useEffect(() => {
         axios.get(API_URL + `/reviews`)
@@ -87,7 +88,7 @@ const ReviewsContainer = () => {
                 setDataSet(reviewsData);
             })
             .catch(err => toast.error(err.message));
-    }, [reviewStatus]);
+    }, [reviewStatus, newReview]);
 
     const deleteHandler = (ReviewId) => {
         axios
@@ -98,6 +99,10 @@ const ReviewsContainer = () => {
             })
             .catch((err) => toast.error(err.message));
     };
+
+    const newReviewHandler = () => {
+        setNewReview(!newReview)
+      };
 
     if (!dataSet) {
         return (
@@ -126,7 +131,7 @@ const ReviewsContainer = () => {
                     </ReviewCard>
                 ))}
 
-                <StyledFormComponent />
+                <StyledFormComponent newReviewHandler={newReviewHandler} />
             </StyledReviewsContainer>
         );
     }

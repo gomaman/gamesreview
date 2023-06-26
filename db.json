@@ -607,6 +607,26 @@
       "ageRating": "Teen",
       "date": "2023-06-05",
       "id": 29
+    },
+    {
+      "gameId": 2,
+      "score": 28,
+      "title": "TEST",
+      "body": "asdsa",
+      "author": "TEST",
+      "ageRating": "Teen",
+      "date": "2023-06-03",
+      "id": 30
+    },
+    {
+      "gameId": 2,
+      "score": 66,
+      "title": "TEST",
+      "body": "adsa",
+      "author": "TEST",
+      "ageRating": "Teen",
+      "date": "2023-06-03",
+      "id": 31
     }
   ],
   "userReviews": [

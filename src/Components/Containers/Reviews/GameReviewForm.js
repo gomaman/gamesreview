@@ -4,6 +4,8 @@ import axios from "axios";
 import { useEffect } from "react";
 import { API_URL } from "../../../Config/LinksConfig";
 import { toast } from "react-toastify";
+import CurrentYearMonth from "../../Date/DateYearMonth";
+import { ToastContainer } from "react-toastify";
 
 const StyledForm = styled.form`
   display: flex;
@@ -55,29 +57,93 @@ const StyledFormContainer = styled.div`
   margin-top: 20px;
 `;
 
-const StyledFormComponent = () => {
+const StyledFormComponent = ({newReviewHandler}) => {
     const [title, setTitle] = useState("");
-    const [score, setScore] = useState("");
-    const [body, setBody] = useState("");
+    const [score, setScore] = useState(50);
     const [review, setReview] = useState("");
+    const [gameData, setGameData] = useState([])
+    const [reviewData, setReviewData] = useState([])
+    const [ageRating, setAgeRating] = useState("")
+    const [selectedGameId, setSelectedGameId] = useState("")
+    const [author, setAuthor] = useState("")
+    const [newReviewId, setNewReviewId] = useState("")
+    const [defaultGameValue, setDefaultGameValue] = useState("")
 
 
     useEffect(() => {
         axios
             .get(API_URL + `/reviews`)
             .then((res) => {
-                const usersData = res.data;
-                console.log(usersData)
-                // setReviews(usersData);
-                // setCommenterUserId(usersData[0].id);
+                const reviewsData = res.data;
+                setReviewData(reviewsData)
+                setNewReviewId(reviewsData[reviewsData.length - 1]?.id + 1);
             })
             .catch((err) => toast.error(err.message));
     }, []);
 
+    useEffect(() => {
+        axios
+            .get(API_URL + `/games`)
+            .then((res) => {
+                const gamesData = res.data;
+                setGameData(gamesData)
+                setDefaultGameValue(gamesData[0].id)
+            })
+            .catch((err) => toast.error(err.message));
+    }, []);
+
+    const validateForm = () => {
+        if (
+            title.trim() === "" || author.trim() === "" || selectedGameId === "" || review.trim() === ""
+        ) {
+            toast.error("Supildyti data");
+            return false;
+        }
+        return true;
+    };
 
     const handleSubmit = (e) => {
         e.preventDefault();
+
+        newReviewHandler()
+
+
+        if (!validateForm()) {
+            return;
+        }
+
+        const newReview = {
+            gameId: Number(selectedGameId),
+            score: score,
+            title,
+            body: review,
+            author,
+            ageRating,
+            date: CurrentYearMonth(),
+            id: newReviewId
+        };
+
+        axios
+            .post(`${API_URL}/reviews`, newReview)
+            .then((response) => {
+                toast.success('success');
+
+                setTitle("");
+                setScore(50);
+                setReview("");
+                setSelectedGameId("");
+                setAuthor("");
+                setAgeRating("");
+        
+            })
+            .catch((err) => toast.error(err.message));
     };
+
+    if (!gameData) {
+        return (
+            <h1>Loading..</h1>
+        )
+    }
 
     return (
         <StyledFormContainer>
@@ -89,6 +155,14 @@ const StyledFormComponent = () => {
                     name="title"
                     value={title}
                     onChange={(e) => setTitle(e.target.value)}
+                />
+
+                <label htmlFor="author">Author:</label>
+                <input
+                    type="text"
+                    id="author"
+                    value={author}
+                    onChange={(e) => setAuthor(e.target.value)}
                 />
 
                 <div className="score-container">
@@ -103,6 +177,21 @@ const StyledFormComponent = () => {
                     />
                     <p>{score}</p>
                 </div>
+
+                <select id="game" value={selectedGameId} onChange={(e) => setSelectedGameId(e.target.value)}>
+                    <option disabled value=""> == Pick a Game == </option>
+                    {gameData.map((game) => (
+                        <option key={game.id} value={game.id}>{game.title}</option>
+                    ))}
+                </select>
+
+                <select id="ageRating" value={ageRating} onChange={(e) => setAgeRating(e.target.value)}>
+                    <option disabled value=""> == Pick a Rating == </option>
+                    <option value="Everyone">Everyone</option>
+                    <option value="Teen">Teen</option>
+                    <option value="Mature">Mature</option>
+                </select>
+
                 <label htmlFor="review">Review:</label>
                 <textarea
                     id="review"
@@ -111,6 +200,8 @@ const StyledFormComponent = () => {
                 />
 
                 <button type="submit">Submit</button>
+
+                <ToastContainer></ToastContainer>
             </StyledForm>
         </StyledFormContainer>
     );
