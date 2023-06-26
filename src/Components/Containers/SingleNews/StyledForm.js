@@ -1,51 +1,58 @@
 import styled from "styled-components";
 
 const StyledForm = styled.form`
-  background-color: rgb(40, 48, 68);
+  background-color: rgb(40,48,68);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   padding: 16px;
   margin-bottom: 16px;
   transition: box-shadow 0.2s ease-in-out;
   height: 100%;
-    
 
-  & div {
+  & > div {
     margin-bottom: 20px;
   }
 
   & label {
     font-weight: bold;
     margin-bottom: 5px;
+    display: block;
   }
 
-  & select {
-    padding: 8px;
-    border: 1px solid #ccc;
+  & select,
+  & textarea,
+  & input[type='text'] {
+    width: 100%;
+    padding: 10px;
     border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out;
+    resize: vertical;
+    background-color: rgb(61,68,86);
   }
 
   & textarea {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
+    min-height: 100px;
   }
 
-  & styled.input {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+  & select {
+    appearance: none;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 14px 14px;
+    padding-right: 30px;
+    background-color: rgb(61,68,86);
   }
 
-  & styled.button {
-    padding: 10px 15px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+  & select:focus,
+  & textarea:focus,
+  & input[type='text']:focus {
+    outline: none;
+    border-color: #007bff;
+    color:rgb(254,255,254);
   }
+
 `;
 
 
