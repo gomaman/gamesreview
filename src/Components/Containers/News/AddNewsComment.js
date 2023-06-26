@@ -18,8 +18,6 @@ const AddNewsComment = ({ handleCommentSubmit, beforeEditComment }) => {
   const [commentDate, setCommentDate] = useState(CurrentDateTime());
   const [commenterUserId, setCommenterUserId] = useState('');
 
-  console.log(beforeEditComment);
-
   useEffect(() => {
     axios
       .get(API_URL + `/users/`)
@@ -60,35 +58,43 @@ const AddNewsComment = ({ handleCommentSubmit, beforeEditComment }) => {
       return;
     }
 
+
+    if(beforeEditComment) {
+
     const updatedComment = {
       ...beforeEditComment,
       userId: Number(commenterUserId),
       body: newCommentBody,
       date: commentDate,
     };
-  
+
     axios
       .put(`${API_URL}/comments/${updatedComment.id}`, updatedComment)
       .then((response) => {
         toast.success('Comment updated successfully.');
-        // Handle any further actions or state updates after successful update
       })
       .catch((err) => toast.error(err.message));
+    } else {
 
-    
-    const newComment = {
-      newsId: Number(id),
-      userId: Number(commenterUserId),
-      body: newCommentBody,
-      date: commentDate,
-    };
+      const newComment = {
+        newsId: Number(id),
+        userId: Number(commenterUserId),
+        body: newCommentBody,
+        date: commentDate,
+      };
+  
+      axios
+        .post(`${API_URL}/comments`, newComment)
+        .then((response) => {
+          toast.success('success');
+        })
+        .catch((err) => toast.error(err.message));
+    }
 
-    axios
-      .post(`${API_URL}/comments`, newComment)
-      .then((response) => {
-        toast.success('success');
-      })
-      .catch((err) => toast.error(err.message));
+    setCommenter('');
+    setNewCommentBody('');
+    setCommentDate(CurrentDateTime());
+    setCommenterUserId(users[0].id);
   };
 
   return (

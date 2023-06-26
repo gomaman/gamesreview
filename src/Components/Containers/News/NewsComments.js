@@ -43,7 +43,6 @@ const NewsComments = ({ commentsUpdated, onEditComment  }) => {
             date,
             id,
         }
-        console.log(beforeEditComment)
         onEditComment(beforeEditComment)
     }
     return (

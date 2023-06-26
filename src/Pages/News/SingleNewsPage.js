@@ -17,9 +17,7 @@ const SingleNewsPage = () => {
   };
 
   const handleEditComment = (comment) => {
-    console.log(comment)
     setBeforeEditComment(comment);
-    console.log(beforeEditComment)
   };
 
   useEffect(() => {
