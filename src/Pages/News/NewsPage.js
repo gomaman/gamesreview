@@ -23,7 +23,6 @@ const NewsPage = () => {
         axios.get(API_URL + `/news`)
             .then(res => {
                 const newsData = res.data;
-                // console.log(newsData)
                 setNews(newsData);
                 setFirstNews(newsData[0])
                 setAfterFirstNews(newsData.slice(1, 4))

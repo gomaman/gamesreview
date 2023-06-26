@@ -26,9 +26,9 @@ const NewsComments = () => {
     <>
       {comments.map((comment) => (
         <CommentCard key={comment.id}>
-          <h3>{comment.body}</h3>
           <CommentAuthor userId={comment.userId} />
           <p>Date: {comment.date}</p>
+          <h3>{comment.body}</h3>
         </CommentCard>
       ))}
     </>
