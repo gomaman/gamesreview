@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const ReviewsContainer = styled.div`
+const StyledReviewsContainer = styled.div`
   gap: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -22,4 +22,4 @@ const ReviewsContainer = styled.div`
   }
 `;
 
-export default ReviewsContainer;
+export default StyledReviewsContainer;
