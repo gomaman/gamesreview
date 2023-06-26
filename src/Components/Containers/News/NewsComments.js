@@ -6,7 +6,7 @@ import { API_URL } from '../../../Config/LinksConfig';
 import CommentCard from '../SingleNews/SingleCommentCard';
 import CommentAuthor from './CommentAuthor';
 
-const NewsComments = () => {
+const NewsComments = ({ commentsUpdated }) => {
   const { id } = useParams();
   const [newsData, setNewsData] = useState({});
   const [comments, setComments] = useState([]);
@@ -20,7 +20,7 @@ const NewsComments = () => {
         setComments(newsData.comments);
       })
       .catch((err) => toast.error(err.message));
-  }, [id]);
+  }, [commentsUpdated]);
 
   return (
     <>

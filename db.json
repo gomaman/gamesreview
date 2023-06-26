@@ -1622,6 +1622,76 @@
       "body": "TEST",
       "date": "2023-06-26 14:35",
       "id": 28
+    },
+    {
+      "newsId": 3,
+      "userId": 1,
+      "body": "TEST",
+      "date": "",
+      "id": 29
+    },
+    {
+      "newsId": 3,
+      "userId": 3,
+      "body": "TEST",
+      "date": "2023-06-26 14:45",
+      "id": 30
+    },
+    {
+      "newsId": 1,
+      "userId": 1,
+      "body": "TEST",
+      "date": "",
+      "id": 31
+    },
+    {
+      "newsId": 1,
+      "userId": 1,
+      "body": "TEST",
+      "date": "",
+      "id": 32
+    },
+    {
+      "newsId": 1,
+      "userId": 1,
+      "body": "test",
+      "date": "",
+      "id": 33
+    },
+    {
+      "newsId": 1,
+      "userId": 1,
+      "body": "test",
+      "date": "",
+      "id": 34
+    },
+    {
+      "newsId": 1,
+      "userId": 1,
+      "body": "testtest",
+      "date": "2023-06-26 14:55",
+      "id": 35
+    },
+    {
+      "newsId": 1,
+      "userId": 1,
+      "body": "test",
+      "date": "",
+      "id": 36
+    },
+    {
+      "newsId": 1,
+      "userId": 1,
+      "body": "testtest",
+      "date": "2023-06-26 14:56",
+      "id": 37
+    },
+    {
+      "newsId": 1,
+      "userId": 1,
+      "body": "test",
+      "date": "",
+      "id": 38
     }
   ]
 }
