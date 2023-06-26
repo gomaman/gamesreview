@@ -11,7 +11,6 @@ const SingleNewsPage = () => {
   const [commentsUpdated, setCommentsUpdated] = useState(false);
 
   const handleCommentSubmit = () => {
-    console.log(commentsUpdated)
     setCommentsUpdated(!commentsUpdated);
   };
 

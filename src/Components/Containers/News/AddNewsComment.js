@@ -15,7 +15,7 @@ const AddNewsComment = ({ handleCommentSubmit }) => {
   const [users, setUsers] = useState([]);
   const [commenter, setCommenter] = useState('');
   const [newCommentBody, setNewCommentBody] = useState('');
-  const [commentDate, setCommentDate] = useState('');
+  const [commentDate, setCommentDate] = useState(CurrentDateTime());
   const [commenterUserId, setCommenterUserId] = useState('')
   
   useEffect(() => {
