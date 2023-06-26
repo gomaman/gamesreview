@@ -5,21 +5,32 @@ import SingleNewsItem from '../../Components/Containers/SingleNews/SingleNewsCom
 import NewsComments from '../../Components/Containers/News/NewsComments';
 import AddNewsComment from '../../Components/Containers/News/AddNewsComment';
 import { useState } from 'react';
+import { useEffect } from 'react';
 
 const SingleNewsPage = () => {
 
   const [commentsUpdated, setCommentsUpdated] = useState(false);
+  const [beforeEditComment, setBeforeEditComment] = useState();
 
   const handleCommentSubmit = () => {
     setCommentsUpdated(!commentsUpdated);
   };
 
+  const handleEditComment = (comment) => {
+    console.log(comment)
+    setBeforeEditComment(comment);
+    console.log(beforeEditComment)
+  };
+
+  useEffect(() => {
+  }, [beforeEditComment]);
+
 
   return (
     <Container>
       <SingleNewsItem />
-      <NewsComments commentsUpdated={commentsUpdated} />
-      <AddNewsComment handleCommentSubmit={handleCommentSubmit} />
+      <NewsComments commentsUpdated={commentsUpdated} onEditComment={handleEditComment} />
+      <AddNewsComment handleCommentSubmit={handleCommentSubmit} beforeEditComment={beforeEditComment}/>
     </Container>
   );
 

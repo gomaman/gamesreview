@@ -9,28 +9,36 @@ import { useState } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 
-const AddNewsComment = ({ handleCommentSubmit }) => {
+const AddNewsComment = ({ handleCommentSubmit, beforeEditComment }) => {
   const { id } = useParams();
 
   const [users, setUsers] = useState([]);
   const [commenter, setCommenter] = useState('');
   const [newCommentBody, setNewCommentBody] = useState('');
   const [commentDate, setCommentDate] = useState(CurrentDateTime());
-  const [commenterUserId, setCommenterUserId] = useState('')
-  
+  const [commenterUserId, setCommenterUserId] = useState('');
+
+  console.log(beforeEditComment);
+
   useEffect(() => {
     axios
       .get(API_URL + `/users/`)
       .then((res) => {
         const usersData = res.data;
         setUsers(usersData);
-        setCommenterUserId(usersData[0].id)
-        
+        setCommenterUserId(usersData[0].id);
       })
       .catch((err) => toast.error(err.message));
   }, []);
 
-  
+  useEffect(() => {
+    if (beforeEditComment) {
+      setCommenterUserId(beforeEditComment.userId);
+      setNewCommentBody(beforeEditComment.body);
+    }
+  }, [beforeEditComment]);
+
+
   const handleUserSelect = (e) => {
     setCommenterUserId(e.target.value);
   };
@@ -39,35 +47,49 @@ const AddNewsComment = ({ handleCommentSubmit }) => {
     setNewCommentBody(e.target.value);
   };
 
-
   const submitComment = (e) => {
-    handleCommentSubmit()
+    handleCommentSubmit();
     e.preventDefault();
     setCommenter(e.target.select.value);
     setNewCommentBody(e.target.body.value);
     setCommentDate(CurrentDateTime());
-    setCommenterUserId(e.target.select.value)
+    setCommenterUserId(e.target.select.value);
 
     if (e.target.body.value === '') {
       toast.error('pakomentuok');
       return;
     }
 
+    const updatedComment = {
+      ...beforeEditComment,
+      userId: Number(commenterUserId),
+      body: newCommentBody,
+      date: commentDate,
+    };
+  
+    axios
+      .put(`${API_URL}/comments/${updatedComment.id}`, updatedComment)
+      .then((response) => {
+        toast.success('Comment updated successfully.');
+        // Handle any further actions or state updates after successful update
+      })
+      .catch((err) => toast.error(err.message));
+
+    
     const newComment = {
       newsId: Number(id),
       userId: Number(commenterUserId),
       body: newCommentBody,
-      date: commentDate
+      date: commentDate,
     };
 
     axios
       .post(`${API_URL}/comments`, newComment)
       .then((response) => {
-        toast.success('success')
+        toast.success('success');
       })
       .catch((err) => toast.error(err.message));
   };
-
 
   return (
     <StyledForm onSubmit={submitComment}>
@@ -83,7 +105,7 @@ const AddNewsComment = ({ handleCommentSubmit }) => {
       </div>
       <div>
         <label htmlFor="body">Comment:</label>
-         <textarea id="body" name="body" value={newCommentBody} onChange={handleCommentChange}></textarea>
+        <textarea id="body" name="body" value={newCommentBody} onChange={handleCommentChange}></textarea>
       </div>
       <Button2 type="submit">Submit</Button2>
     </StyledForm>
