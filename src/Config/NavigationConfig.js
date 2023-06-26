@@ -15,10 +15,6 @@ export const NAV_ITEMS = [
         href: "/news",
         text: "News"
     },
-    {
-        href: "/search",
-        text: "Search"
-    },
 ]
 
 // export const API_URL = 'http://localhost:3000'

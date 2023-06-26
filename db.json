@@ -369,26 +369,6 @@
   ],
   "reviews": [
     {
-      "gameId": 1,
-      "score": 92,
-      "title": "A Masterpiece RPG",
-      "body": "The Witcher 3: Wild Hunt is an incredible RPG that offers a rich and immersive open world, captivating storylines, and memorable characters. The gameplay mechanics are polished, the graphics are stunning, and the soundtrack is exceptional. It's a must-play for any fan of the genre.",
-      "author": "RPGEnthusiast",
-      "ageRating": "Mature",
-      "date": "2022-11-15",
-      "id": 1
-    },
-    {
-      "gameId": 2,
-      "score": 91,
-      "title": "A Breath of Fresh Air",
-      "body": "The Legend of Zelda: Breath of the Wild redefines what an open-world adventure game can be. With its vast and beautifully crafted world, innovative gameplay mechanics, and engaging puzzles, it offers an unforgettable experience. The attention to detail and the sense of exploration make it a true masterpiece.",
-      "author": "AdventureSeeker",
-      "ageRating": "Everyone 10+",
-      "date": "2022-11-15",
-      "id": 2
-    },
-    {
       "gameId": 3,
       "score": 97,
       "title": "A Western Epic",
@@ -397,16 +377,6 @@
       "ageRating": "Mature",
       "date": "2022-11-15",
       "id": 3
-    },
-    {
-      "gameId": 4,
-      "score": 87,
-      "title": "A Crime-Filled Adventure",
-      "body": "Grand Theft Auto V offers a sprawling open world filled with opportunities for chaos and mayhem. The three protagonists provide an interesting twist to the gameplay, and the missions are varied and engaging. The online multiplayer component adds even more depth to the experience, making it a must-play for fans of the series.",
-      "author": "CrimeLord",
-      "ageRating": "Mature",
-      "date": "2022-11-15",
-      "id": 4
     },
     {
       "gameId": 5,
@@ -599,16 +569,6 @@
       "id": 23
     },
     {
-      "gameId": 24,
-      "score": 95,
-      "title": "An Epic Samurai Adventure",
-      "body": "Ghost of Tsushima transports players to feudal Japan during the Mongol invasion, offering an immersive samurai experience like no other. Embark on a quest for vengeance as Jin Sakai, a skilled warrior determined to protect his homeland. With its breathtaking landscapes, captivating storytelling, and thrilling sword-fighting mechanics, Ghost of Tsushima captivates players from start to finish. Engage in epic duels, stealthily assassinate enemies, and make choices that shape the fate of Tsushima. Prepare to embark on an unforgettable journey of honor, sacrifice, and redemption.",
-      "author": "SamuraiSoul",
-      "ageRating": "Mature",
-      "date": "2023-04-16",
-      "id": 24
-    },
-    {
       "gameId": 25,
       "score": 95,
       "title": "A Charming and Relaxing Life Simulator",
@@ -629,16 +589,6 @@
       "id": 26
     },
     {
-      "gameId": 27,
-      "score": 88,
-      "title": "Unleash Your Creativity in a Virtual World",
-      "body": "The Sims 4 is a beloved life simulation game that allows you to create and control virtual people in a variety of exciting scenarios. Build your dream homes, shape the lives of your Sims, and experience their triumphs and challenges. With its intuitive building tools, diverse customization options, and engaging gameplay mechanics, The Sims 4 offers endless possibilities. Whether you're pursuing career aspirations, forming relationships, or exploring the vibrant neighborhoods, The Sims 4 lets you unleash your creativity and tell captivating stories in a virtual world.",
-      "author": "SimmerExtraordinaire",
-      "ageRating": "Teen",
-      "date": "2023-05-01",
-      "id": 27
-    },
-    {
       "gameId": 28,
       "score": 92,
       "title": "A High-Octane Demon-Slaying Adventure",
@@ -657,17 +607,6 @@
       "ageRating": "Teen",
       "date": "2023-06-05",
       "id": 29
-
-    },
-    {
-      "gameId": 30,
-      "score": 96,
-      "title": "A Captivating Open-World Adventure",
-      "body": "Horizon Zero Dawn takes players on a breathtaking journey in a post-apocalyptic world dominated by mechanized creatures. Assume the role of Aloy, a skilled hunter, and uncover the mysteries of her past and the origins of the robotic beasts. With its stunning visuals, immersive gameplay, and compelling narrative, Horizon Zero Dawn offers an unforgettable open-world experience. Engage in thrilling battles, explore a vast and diverse landscape, and unravel the secrets of this captivating and dangerous world. Prepare to embark on an epic quest of discovery and survival.",
-      "author": "NatureSeeker",
-      "ageRating": "Teen",
-      "date": "2022-11-15",
-      "id": 30
     }
   ],
   "userReviews": [
@@ -1225,126 +1164,157 @@
   "pictures": [
     {
       "gameId": 1,
+      "reviewId": 1,
       "url": "https://cdn1.epicgames.com/400347196e674de89c23cc2a7f2121db/offer/AC%20KINGDOM%20PREORDER_STANDARD%20EDITION_EPIC_Key_Art_Wide_3840x2160-3840x2160-485fe17203671386c71bde8110886c7d.jpg"
     },
     {
       "gameId": 2,
+      "reviewId": 2,
       "url": "https://cdn1.epicgames.com/400347196e674de89c23cc2a7f2121db/offer/AC%20KINGDOM%20PREORDER_STANDARD%20EDITION_EPIC_Key_Art_Wide_3840x2160-3840x2160-485fe17203671386c71bde8110886c7d.jpg"
     },
     {
       "gameId": 3,
+      "reviewId": 3,
       "url": "https://cdn1.epicgames.com/400347196e674de89c23cc2a7f2121db/offer/AC%20KINGDOM%20PREORDER_STANDARD%20EDITION_EPIC_Key_Art_Wide_3840x2160-3840x2160-485fe17203671386c71bde8110886c7d.jpg"
     },
     {
       "gameId": 4,
+      "reviewId": 4,
       "url": "https://cdn1.epicgames.com/400347196e674de89c23cc2a7f2121db/offer/AC%20KINGDOM%20PREORDER_STANDARD%20EDITION_EPIC_Key_Art_Wide_3840x2160-3840x2160-485fe17203671386c71bde8110886c7d.jpg"
     },
     {
       "gameId": 5,
+      "reviewId": 5,
       "url": "https://cdn1.epicgames.com/400347196e674de89c23cc2a7f2121db/offer/AC%20KINGDOM%20PREORDER_STANDARD%20EDITION_EPIC_Key_Art_Wide_3840x2160-3840x2160-485fe17203671386c71bde8110886c7d.jpg"
     },
     {
       "gameId": 6,
+      "reviewId": 6,
       "url": "https://cdn1.epicgames.com/400347196e674de89c23cc2a7f2121db/offer/AC%20KINGDOM%20PREORDER_STANDARD%20EDITION_EPIC_Key_Art_Wide_3840x2160-3840x2160-485fe17203671386c71bde8110886c7d.jpg"
     },
     {
       "gameId": 7,
+      "reviewId": 7,
       "url": "https://cdn1.epicgames.com/400347196e674de89c23cc2a7f2121db/offer/AC%20KINGDOM%20PREORDER_STANDARD%20EDITION_EPIC_Key_Art_Wide_3840x2160-3840x2160-485fe17203671386c71bde8110886c7d.jpg"
     },
     {
       "gameId": 8,
+      "reviewId": 8,
       "url": "https://cdn1.epicgames.com/400347196e674de89c23cc2a7f2121db/offer/AC%20KINGDOM%20PREORDER_STANDARD%20EDITION_EPIC_Key_Art_Wide_3840x2160-3840x2160-485fe17203671386c71bde8110886c7d.jpg"
     },
     {
       "gameId": 9,
+      "reviewId": 9,
       "url": "https://cdn1.epicgames.com/400347196e674de89c23cc2a7f2121db/offer/AC%20KINGDOM%20PREORDER_STANDARD%20EDITION_EPIC_Key_Art_Wide_3840x2160-3840x2160-485fe17203671386c71bde8110886c7d.jpg"
     },
     {
       "gameId": 10,
+      "reviewId": 10,
       "url": "https://cdn1.epicgames.com/400347196e674de89c23cc2a7f2121db/offer/AC%20KINGDOM%20PREORDER_STANDARD%20EDITION_EPIC_Key_Art_Wide_3840x2160-3840x2160-485fe17203671386c71bde8110886c7d.jpg"
     },
     {
       "gameId": 11,
+      "reviewId": 11,
       "url": "https://cdn1.epicgames.com/400347196e674de89c23cc2a7f2121db/offer/AC%20KINGDOM%20PREORDER_STANDARD%20EDITION_EPIC_Key_Art_Wide_3840x2160-3840x2160-485fe17203671386c71bde8110886c7d.jpg"
     },
     {
       "gameId": 11,
+      "reviewId": 11,
       "url": "https://howmanychapters.com/wp-content/uploads/2021/07/how-many-chapters-in-asasins-creed-valhalla.jpg"
     },
     {
       "gameId": 12,
+      "reviewId": 12,
       "url": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
     },
     {
       "gameId": 13,
+      "reviewId": 13,
       "url": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
     },
     {
       "gameId": 14,
+      "reviewId": 14,
       "url": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
     },
     {
       "gameId": 15,
+      "reviewId": 15,
       "url": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
     },
     {
       "gameId": 16,
+      "reviewId": 16,
       "url": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
     },
     {
       "gameId": 17,
+      "reviewId": 17,
       "url": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
     },
     {
       "gameId": 18,
+      "reviewId": 18,
       "url": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
     },
     {
       "gameId": 19,
+      "reviewId": 19,
       "url": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
     },
     {
       "gameId": 20,
+      "reviewId": 20,
       "url": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
     },
     {
       "gameId": 21,
+      "reviewId": 21,
       "url": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
     },
     {
       "gameId": 22,
+      "reviewId": 22,
       "url": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
     },
     {
       "gameId": 23,
+      "reviewId": 23,
       "url": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
     },
     {
       "gameId": 24,
+      "reviewId": 24,
       "url": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
     },
     {
       "gameId": 25,
+      "reviewId": 25,
       "url": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
     },
     {
       "gameId": 26,
+      "reviewId": 26,
       "url": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
     },
     {
       "gameId": 27,
+      "reviewId": 27,
       "url": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
     },
     {
       "gameId": 28,
+      "reviewId": 28,
       "url": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
     },
     {
       "gameId": 29,
+      "reviewId": 29,
       "url": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
     },
     {
       "gameId": 30,
+      "reviewId": 30,
       "url": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
     }
   ],

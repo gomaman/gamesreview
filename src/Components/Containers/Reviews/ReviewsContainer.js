@@ -5,6 +5,8 @@ import { API_URL } from '../../../Config/LinksConfig';
 import { toast, ToastContainer } from 'react-toastify';
 import StyledReviewsContainer from "./StyledReviewsContainer";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
+
 
 
 const ReviewCard = styled.div`
@@ -44,16 +46,21 @@ const ReviewCard = styled.div`
         border-radius: 8px;
         margin-bottom: 10px;
     }
+    a.news-item-link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
 
-    .review-title {
-        font-size: 25px;
-        font-weight:bold;
-        
+    &:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     }
+  }
+
 `;
 
 const ReviewsContainer = () => {
     const [dataSet, setDataSet] = useState([]);
+    const [reviewStatus, setReviewStatus] = useState(false)
 
     useEffect(() => {
         axios.get(API_URL + `/reviews`)
@@ -62,7 +69,18 @@ const ReviewsContainer = () => {
                 setDataSet(reviewsData);
             })
             .catch(err => toast.error(err.message));
-    }, []);
+    }, [reviewStatus]);
+
+
+    const deleteHandler = (ReviewId) => {
+        axios
+            .delete(API_URL + `/reviews/${ReviewId}`)
+            .then((res) => {
+                toast.success('Review Deleted');
+                setReviewStatus(true)
+            })
+            .catch((err) => toast.error(err.message));
+    };
 
     if (!dataSet) {
         return (
@@ -73,23 +91,23 @@ const ReviewsContainer = () => {
             <StyledReviewsContainer>
                 {dataSet.map((review) => (
                     <ReviewCard key={review.id}>
-                        <ul>
-                            <li className="review-title">{review.title}</li>
-                            <li>{review.score}</li>
-                            <li>
-                                <p className="truncated-body">{review.body.substring(0, 60) + '... More'}</p>
-                            </li>
-                            <li><img src="https://assets-prd.ignimgs.com/2023/06/01/systemshock-blogroll-1685662034076.jpg?crop=16%3A9&width=282"></img></li>
+                        <Link key={review.id} to={`/reviews/${review.id}`} className="news-item-link">
                             <ul>
+                                <li className="review-title">{review.title}</li>
+                                <li>{review.score}</li>
+                                <li>
+                                    <p className="truncated-body">{review.body.substring(0, 60) + '... More'}</p>
+                                </li>
+                                <li><img src="https://assets-prd.ignimgs.com/2023/06/01/systemshock-blogroll-1685662034076.jpg?crop=16%3A9&width=282"></img></li>
                                 <li>{review.ageRating}</li>
-                            </ul>
-                            <ul>
                                 <li>{review.date}</li>
                                 <li>{review.author}</li>
                             </ul>
-                        </ul>
+                        </Link>
+                            <button onClick={() => deleteHandler(review.id)}>Delete</button>
                     </ReviewCard>
                 ))}
+
             </StyledReviewsContainer>
         );
     }

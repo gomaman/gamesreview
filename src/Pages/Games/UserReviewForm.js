@@ -160,19 +160,6 @@ const UserReviewForm = ({ resetUserReview, resetEditStatus  }) => {
                         onChange={(e) => setScore(e.target.value)}
                     />
                 </div>
-                {/* <div className="form-group">
-                    <label className="label" htmlFor="date">
-                        Date:
-                    </label>
-                    <input
-                        className="input-date"
-                        type="date"
-                        id="date"
-                        name="date"
-                        value={date}
-                        onChange={(e) => setDate(e.target.value)}
-                    />
-                </div> */}
                 <button className="submit-button" type="submit">
                     Submit Review
                 </button>
@@ -183,25 +170,3 @@ const UserReviewForm = ({ resetUserReview, resetEditStatus  }) => {
 
 export default UserReviewForm;
 
-
-
-
-
-// if(edit) {
-//     axios 
-//         .put(`${API_URL}/userReviews/${reviewId}`, newReview)
-//         .then((response) => {
-//             resetUserReview();
-//             setFormSubmitted(false);
-//             setEdit(false);
-//         })
-//         .catch((err) => toast.error(err.message))
-// } else {
-//     axios
-//     .post(`${API_URL}/userReviews`, newReview)
-//     .then((response) => {
-//         resetUserReview();
-//         setFormSubmitted(false);
-//     })
-//     .catch(err => toast.error(err.message));
-// }

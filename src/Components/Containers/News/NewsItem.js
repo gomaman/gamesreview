@@ -21,7 +21,6 @@ const NewsItem = ({ newsData }) => {
         <StyledNewsItem className="blog-container big">
             <Link to={`/news/${newsData.id}`} className="news-item-link">
                 <div className="blog-img-container">
-
                     <img src={thumbnail} alt="Blog Image" />
                 </div>
                 <div className="main-blog-content-container">
