@@ -4,43 +4,50 @@ import axios from "axios";
 import { API_URL } from '../../../Config/LinksConfig';
 import { toast, ToastContainer } from 'react-toastify';
 import StyledReviewsContainer from "./StyledReviewsContainer";
+import styled from "styled-components";
+
+
+const ReviewCard = styled.div`
+    background-color: rgb(41, 37, 37);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+`;
 
 const ReviewsContainer = () => {
-
     const [dataSet, setDataSet] = useState([]);
+
     useEffect(() => {
-        axios.get(API_URL + `/games/?_embed=reviews`)
+        axios.get(API_URL + `/reviews`)
             .then(res => {
                 const reviewsData = res.data;
                 setDataSet(reviewsData);
-                // editui reiks setReview(reviewsData.reviews[0]);
             })
-            .catch(err => toast.error(err.message))
+            .catch(err => toast.error(err.message));
     }, []);
 
     if (!dataSet) {
         return (
             <h1>Loading...</h1>
-        )
-    } else
-
+        );
+    } else {
         return (
             <StyledReviewsContainer>
-                {dataSet.map((dataItem) => (
-                    <div key={dataItem.id}>
+                {dataSet.map((review) => (
+                    <ReviewCard key={review.id}>
                         <ul>
-                            {console.log(dataItem.reviews[0])}
-                            <li>{dataItem.reviews[0].ageRating}</li>
-                            <li>{dataItem.reviews[0].author}</li>
-                            <li>{dataItem.reviews[0].body}</li>
-                            <li>{dataItem.reviews[0].date}</li>
-                            <li>{dataItem.reviews[0].score}</li>
-                            <li>{dataItem.reviews[0].title}</li>
+                            <h2>{review.title}</h2>
+                            <li>{review.score}</li>
+                            <li>{review.body}</li>
+                            <li>{review.ageRating}</li>
+                            <li>{review.date}</li>
+                            <li>{review.author}</li>
                         </ul>
-                    </div>
+                    </ReviewCard>
                 ))}
             </StyledReviewsContainer>
-        )
-}
+        );
+    }
+};
 
-export default ReviewsContainer
+export default ReviewsContainer;

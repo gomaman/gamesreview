@@ -375,7 +375,8 @@
       "body": "The Witcher 3: Wild Hunt is an incredible RPG that offers a rich and immersive open world, captivating storylines, and memorable characters. The gameplay mechanics are polished, the graphics are stunning, and the soundtrack is exceptional. It's a must-play for any fan of the genre.",
       "author": "RPGEnthusiast",
       "ageRating": "Mature",
-      "date": "2022-11-15"
+      "date": "2022-11-15",
+      "id": 1
     },
     {
       "gameId": 2,
@@ -384,7 +385,8 @@
       "body": "The Legend of Zelda: Breath of the Wild redefines what an open-world adventure game can be. With its vast and beautifully crafted world, innovative gameplay mechanics, and engaging puzzles, it offers an unforgettable experience. The attention to detail and the sense of exploration make it a true masterpiece.",
       "author": "AdventureSeeker",
       "ageRating": "Everyone 10+",
-      "date": "2022-11-15"
+      "date": "2022-11-15",
+      "id": 2
     },
     {
       "gameId": 3,
@@ -393,7 +395,8 @@
       "body": "Red Dead Redemption 2 is a stunning achievement in storytelling and world-building. The immersive and realistic world, coupled with memorable characters and a gripping narrative, make it one of the best games of this generation. The attention to detail, from the breathtaking visuals to the intricate gameplay mechanics, is truly remarkable.",
       "author": "WildWestFan",
       "ageRating": "Mature",
-      "date": "2022-11-15"
+      "date": "2022-11-15",
+      "id": 3
     },
     {
       "gameId": 4,
@@ -402,7 +405,8 @@
       "body": "Grand Theft Auto V offers a sprawling open world filled with opportunities for chaos and mayhem. The three protagonists provide an interesting twist to the gameplay, and the missions are varied and engaging. The online multiplayer component adds even more depth to the experience, making it a must-play for fans of the series.",
       "author": "CrimeLord",
       "ageRating": "Mature",
-      "date": "2022-11-15"
+      "date": "2022-11-15",
+      "id": 4
     },
     {
       "gameId": 5,
@@ -411,7 +415,8 @@
       "body": "Minecraft is a game that sparks creativity and allows players to build their own virtual worlds. With its endless possibilities and addictive gameplay, it has captured the hearts of millions of players worldwide. Whether you enjoy mining, crafting, or exploring, Minecraft offers something for everyone.",
       "author": "CraftingEnthusiast",
       "ageRating": "Everyone",
-      "date": "2022-11-15"
+      "date": "2022-11-15",
+      "id": 5
     },
     {
       "gameId": 6,
@@ -420,7 +425,8 @@
       "body": "God of War is a stunning and emotional journey that follows Kratos and his son Atreus as they navigate the treacherous realms of Norse mythology. The combat is satisfying and brutal, the storytelling is captivating, and the world is beautifully realized. It's a game that raises the bar for action-adventure titles.",
       "author": "MythologyFan",
       "ageRating": "Mature",
-      "date": "2022-11-15"
+      "date": "2022-11-15",
+      "id": 6
     },
     {
       "gameId": 7,
@@ -429,7 +435,8 @@
       "body": "Super Mario Odyssey is a delightful and whimsical platformer that showcases Nintendo's creativity and charm. The imaginative levels, clever gameplay mechanics, and catchy music make it a joy to play. It's a must-have for any Nintendo Switch owner and a worthy addition to the Mario franchise.",
       "author": "PlatformerFanatic",
       "ageRating": "Everyone",
-      "date": "2022-06-01"
+      "date": "2022-06-01",
+      "id": 7
     },
     {
       "gameId": 8,
@@ -438,7 +445,8 @@
       "body": "Fortnite took the gaming world by storm with its addictive and fast-paced battle royale gameplay. The constant updates and additions keep the game fresh, and the cross-platform support allows players to compete with friends on different devices. While it may not be everyone's cup of tea, it's hard to deny its impact on the industry.",
       "author": "BattleRoyalePro",
       "ageRating": "Teen",
-      "date": "2023-04-01"
+      "date": "2023-04-01",
+      "id": 8
     },
     {
       "gameId": 9,
@@ -447,7 +455,8 @@
       "body": "Overwatch combines fast-paced action with strategic team-based gameplay, making it a refreshing addition to the shooter genre. The diverse roster of heroes and the emphasis on teamwork create exciting and dynamic matches. While it may not have the same longevity as some other online shooters, it's still a highly enjoyable experience.",
       "author": "TeamPlayer",
       "ageRating": "Teen",
-      "date": "2023-05-17"
+      "date": "2023-05-17",
+      "id": 9
     },
     {
       "gameId": 10,
@@ -456,7 +465,8 @@
       "body": "The Last of Us Part II continues the gripping story of Ellie and Joel in a beautifully crafted and emotionally charged world. The gameplay seamlessly blends intense combat with exploration and puzzle-solving. It's a game that challenges players morally and leaves a lasting impact.",
       "author": "SurvivalistGamer",
       "ageRating": "Mature",
-      "date": "2022-07-03"
+      "date": "2022-07-03",
+      "id": 10
     },
     {
       "gameId": 11,
@@ -465,7 +475,8 @@
       "body": "In Mass Effect Legendary Edition, players embark on a thrilling journey through the galaxy as Commander Shepard. The remastered trilogy offers improved visuals, updated gameplay mechanics, and all the DLC content included. The rich and immersive sci-fi universe, along with impactful decision-making, delivers a truly unforgettable experience. Whether you're exploring uncharted planets, engaging in intense battles, or forming deep connections with your crew, Mass Effect Legendary Edition is a must-play for any fan of the series or sci-fi genre.",
       "author": "GalacticExplorer",
       "ageRating": "Mature",
-      "date": "2023-02-09"
+      "date": "2023-02-09",
+      "id": 11
     },
     {
       "gameId": 12,
@@ -474,7 +485,8 @@
       "body": "Call of Duty: Warzone takes the popular franchise to new heights with its free-to-play battle royale mode. Engage in intense firefights, tactical strategies, and fast-paced action as you fight for survival in a massive open-world map. With its realistic graphics, fluid gunplay, and regular updates, Warzone keeps players hooked with its addictive gameplay. Whether you prefer solo play or teaming up with friends, Call of Duty: Warzone offers an exhilarating and adrenaline-pumping experience for fans of the genre.",
       "author": "WarzoneGamer",
       "ageRating": "Mature",
-      "date": "2023-01-14"
+      "date": "2023-01-14",
+      "id": 12
     },
     {
       "gameId": 13,
@@ -483,7 +495,8 @@
       "body": "Step into Night City with Cyberpunk 2077, an immersive open-world RPG set in a dystopian future. Explore a sprawling metropolis, engage in high-stakes missions, and make impactful choices that shape the story. Despite its technical issues at launch, the game offers a captivating narrative, stunning visuals, and a deep character customization system. Dive into a world of cybernetic enhancements, corporate conspiracies, and morally ambiguous decisions in Cyberpunk 2077.",
       "author": "Netrunner",
       "ageRating": "Mature",
-      "date": "2023-03-21"
+      "date": "2023-03-21",
+      "id": 13
     },
     {
       "gameId": 14,
@@ -492,7 +505,8 @@
       "body": "FIFA 22 delivers the most realistic and immersive soccer experience yet. With improved graphics, fluid gameplay, and enhanced player animations, it truly captures the essence of the sport. Whether you're playing a thrilling match in career mode, competing against friends in online multiplayer, or building your ultimate team, FIFA 22 offers hours of excitement. The attention to detail in recreating the stadiums, player movements, and tactical strategies is remarkable. For fans of the beautiful game, FIFA 22 is a must-have title.",
       "author": "SoccerFanatic",
       "ageRating": "Everyone",
-      "date": "2022-10-13"
+      "date": "2022-10-13",
+      "id": 14
     },
     {
       "gameId": 15,
@@ -501,7 +515,8 @@
       "body": "The Elder Scrolls V: Skyrim is an epic open-world RPG that immerses players in a rich and captivating fantasy universe. From the moment you step foot in the breathtaking land of Skyrim, you're greeted with a vast world full of ancient ruins, majestic mountains, and dangerous creatures. With its deep lore, immersive quests, and freedom to explore, Skyrim offers an unparalleled sense of adventure. Whether you choose to follow the main storyline, join guilds, or simply wander the wilderness, there's always something new to discover. Prepare to lose yourself in the enchanting world of Skyrim.",
       "author": "Dragonborn",
       "ageRating": "Mature",
-      "date": "2022-12-02"
+      "date": "2022-12-02",
+      "id": 15
     },
     {
       "gameId": 16,
@@ -510,7 +525,8 @@
       "body": "Fallout 4 is a gripping post-apocalyptic RPG set in the ruins of Boston. Step into the shoes of the Sole Survivor as you navigate a world ravaged by nuclear war, encountering mutants, factions, and the harsh realities of survival. With its expansive open world, immersive storytelling, and dynamic gameplay, Fallout 4 offers endless possibilities. Whether you're building settlements, customizing weapons, or making impactful choices, your actions shape the fate of the wasteland. Prepare for an unforgettable journey in the Fallout universe.",
       "author": "WastelandExplorer",
       "ageRating": "Mature",
-      "date": "2022-08-27"
+      "date": "2022-08-27",
+      "id": 16
     },
     {
       "gameId": 17,
@@ -519,7 +535,8 @@
       "body": "Super Smash Bros. Ultimate brings together an all-star cast of iconic characters from various gaming franchises in an epic crossover fighting game. With its fast-paced gameplay, diverse roster of fighters, and a wide range of stages, it offers endless excitement for both casual and competitive players. Whether you're battling it out with friends locally or engaging in intense online matches, Super Smash Bros. Ultimate delivers a thrilling multiplayer experience. The attention to detail in the character animations, stage designs, and nostalgic references make it a love letter to gaming history. Get ready to settle it in Smash!",
       "author": "SmashMaster",
       "ageRating": "Everyone",
-      "date": "2023-06-10"
+      "date": "2023-06-10",
+      "id": 17
     },
     {
       "gameId": 18,
@@ -528,7 +545,8 @@
       "body": "League of Legends is a highly competitive multiplayer online battle arena (MOBA) game that has captivated millions of players worldwide. With its strategic depth, fast-paced gameplay, and constantly evolving meta, it offers an intense and rewarding experience. Choose from a diverse roster of champions, each with their own unique abilities and playstyles, and work together with your team to outmaneuver and outsmart your opponents. Whether you're participating in ranked matches, engaging in epic team fights, or mastering complex strategies, League of Legends is the ultimate test of skill and teamwork.",
       "author": "Summoner",
       "ageRating": "Teen",
-      "date": "2022-07-27"
+      "date": "2022-07-27",
+      "id": 18
     },
     {
       "gameId": 19,
@@ -537,7 +555,8 @@
       "body": "Apex Legends is a thrilling free-to-play battle royale game that takes the genre to new heights. Jump into the arena as a Legend, each with their own unique abilities, and fight against other squads in fast-paced matches. The fluid movement mechanics, strategic gameplay, and constant updates make it a must-play for battle royale enthusiasts. Whether you're coordinating with your team, looting for powerful weapons, or using your abilities to outmaneuver your opponents, Apex Legends delivers exhilarating moments and intense gunfights that keep you coming back for more.",
       "author": "ApexChampion",
       "ageRating": "Teen",
-      "date": "2023-03-14"
+      "date": "2023-03-14",
+      "id": 19
     },
     {
       "gameId": 20,
@@ -546,7 +565,8 @@
       "body": "Mortal Kombat 11 is a fighting game that raises the bar for the iconic franchise. Engage in visceral battles as legendary characters, executing bone-crushing moves and jaw-dropping fatalities. With its smooth gameplay, extensive character customization, and captivating story mode, Mortal Kombat 11 offers a complete fighting game experience. The detailed graphics, brutal animations, and diverse roster of fighters make each match an adrenaline-pumping spectacle. Whether you're competing against friends locally or challenging opponents online, Mortal Kombat 11 delivers a satisfying mix of nostalgia and innovation.",
       "author": "Kombatant",
       "ageRating": "Mature",
-      "date": "2023-02-21"
+      "date": "2023-02-21",
+      "id": 20
     },
     {
       "gameId": 21,
@@ -555,7 +575,8 @@
       "body": "Resident Evil Village continues the iconic survival horror franchise with a chilling and intense journey. Step into the shoes of Ethan Winters as he explores a mysterious village filled with grotesque creatures and a haunting atmosphere. With its atmospheric graphics, immersive gameplay, and spine-tingling encounters, Resident Evil Village delivers a memorable horror experience. Solve puzzles, scavenge for resources, and fight for survival in a world filled with unimaginable horrors. Brace yourself for a nerve-wracking adventure that will keep you on the edge of your seat.",
       "author": "HorrorFanatic",
       "ageRating": "Mature",
-      "date": "2023-02-24"
+      "date": "2023-02-24",
+      "id": 21
     },
     {
       "gameId": 22,
@@ -564,7 +585,8 @@
       "body": "Hades is a captivating rogue-like action game that combines fast-paced combat, a rich narrative, and stunning visuals. Descend into the depths of the underworld as Zagreus, the son of Hades, and battle your way through hordes of mythical creatures. With its addictive gameplay loop, intricate character relationships, and dynamic storytelling, Hades offers an engaging and rewarding experience. Unleash powerful abilities, upgrade your weapons, and unravel the mysteries of the underworld in this masterpiece from Supergiant Games.",
       "author": "RogueSlayer",
       "ageRating": "Teen",
-      "date": "2023-03-15"
+      "date": "2023-03-15",
+      "id": 22
     },
     {
       "gameId": 23,
@@ -573,7 +595,8 @@
       "body": "Marvel's Spider-Man: Miles Morales takes players on a thrilling web-slinging adventure in the bustling city of New York. Assume the role of Miles Morales as he embraces his new powers and battles against a rising threat. With its stunning visuals, seamless traversal, and exciting combat mechanics, the game captures the essence of being a superhero. Explore a vibrant open-world, uncover hidden secrets, and experience an emotional and inspiring story. Swing through the city streets and unleash your spider-powers in this remarkable continuation of the Spider-Man franchise.",
       "author": "SpideyFan",
       "ageRating": "Teen",
-      "date": "2022-08-23"
+      "date": "2022-08-23",
+      "id": 23
     },
     {
       "gameId": 24,
@@ -582,7 +605,8 @@
       "body": "Ghost of Tsushima transports players to feudal Japan during the Mongol invasion, offering an immersive samurai experience like no other. Embark on a quest for vengeance as Jin Sakai, a skilled warrior determined to protect his homeland. With its breathtaking landscapes, captivating storytelling, and thrilling sword-fighting mechanics, Ghost of Tsushima captivates players from start to finish. Engage in epic duels, stealthily assassinate enemies, and make choices that shape the fate of Tsushima. Prepare to embark on an unforgettable journey of honor, sacrifice, and redemption.",
       "author": "SamuraiSoul",
       "ageRating": "Mature",
-      "date": "2023-04-16"
+      "date": "2023-04-16",
+      "id": 24
     },
     {
       "gameId": 25,
@@ -591,7 +615,8 @@
       "body": "Animal Crossing: New Horizons offers a delightful and immersive life simulation experience that captures the hearts of players worldwide. Step onto your very own deserted island and create your dream getaway. With its charming characters, beautiful visuals, and calming gameplay, it provides a peaceful escape from reality. Decorate your home, design the island to your liking, and build relationships with adorable animal villagers. Whether you're fishing, bug catching, or participating in seasonal events, Animal Crossing: New Horizons offers a cozy and heartwarming virtual paradise.",
       "author": "IslandExplorer",
       "ageRating": "Everyone",
-      "date": "2022-07-15"
+      "date": "2022-07-15",
+      "id": 25
     },
     {
       "gameId": 26,
@@ -600,7 +625,8 @@
       "body": "World of Warcraft is an iconic massively multiplayer online role-playing game (MMORPG) that has shaped the genre for over a decade. Embark on epic quests, join forces with friends, and explore a vast fantasy world filled with wonders and dangers. With its immersive lore, deep gameplay systems, and a passionate community, World of Warcraft offers an endless adventure. Engage in thrilling PvP battles, conquer challenging raids, or simply immerse yourself in the rich storylines and expansive world. Prepare to lose yourself in the vast and ever-evolving universe of Azeroth.",
       "author": "HeroicAdventurer",
       "ageRating": "Teen",
-      "date": "2022-08-13"
+      "date": "2022-08-13",
+      "id": 26
     },
     {
       "gameId": 27,
@@ -609,7 +635,8 @@
       "body": "The Sims 4 is a beloved life simulation game that allows you to create and control virtual people in a variety of exciting scenarios. Build your dream homes, shape the lives of your Sims, and experience their triumphs and challenges. With its intuitive building tools, diverse customization options, and engaging gameplay mechanics, The Sims 4 offers endless possibilities. Whether you're pursuing career aspirations, forming relationships, or exploring the vibrant neighborhoods, The Sims 4 lets you unleash your creativity and tell captivating stories in a virtual world.",
       "author": "SimmerExtraordinaire",
       "ageRating": "Teen",
-      "date": "2023-05-01"
+      "date": "2023-05-01",
+      "id": 27
     },
     {
       "gameId": 28,
@@ -618,7 +645,8 @@
       "body": "Doom Eternal is an adrenaline-fueled first-person shooter that puts you in the shoes of the legendary Doom Slayer. Battle against hordes of demons from Hell across various dimensions and save humanity from the brink of destruction. With its fast-paced gameplay, intense gunfights, and brutal glory kills, Doom Eternal delivers an exhilarating and satisfying experience. Unleash an arsenal of powerful weapons, master your mobility, and face off against epic bosses in the ultimate fight for survival. Prepare for an action-packed and pulse-pounding demon-slaying adventure.",
       "author": "SlayerOfDemons",
       "ageRating": "Mature",
-      "date": "2022-07-19"
+      "date": "2022-07-19",
+      "id": 28
     },
     {
       "gameId": 29,
@@ -627,7 +655,9 @@
       "body": "Star Wars Jedi: Fallen Order offers a thrilling and immersive action-adventure experience set in the beloved Star Wars universe. Assume the role of Cal Kestis, a young Jedi Padawan, as he embarks on a quest to rebuild the Jedi Order in the aftermath of Order 66. With its engaging story, challenging combat, and stunning visuals, Star Wars Jedi: Fallen Order captures the essence of a true Jedi journey. Use your lightsaber skills, harness the Force, and explore beautifully crafted worlds in this epic Star Wars saga.",
       "author": "ForceWielder",
       "ageRating": "Teen",
-      "date": "2023-06-05"
+      "date": "2023-06-05",
+      "id": 29
+
     },
     {
       "gameId": 30,
@@ -636,7 +666,8 @@
       "body": "Horizon Zero Dawn takes players on a breathtaking journey in a post-apocalyptic world dominated by mechanized creatures. Assume the role of Aloy, a skilled hunter, and uncover the mysteries of her past and the origins of the robotic beasts. With its stunning visuals, immersive gameplay, and compelling narrative, Horizon Zero Dawn offers an unforgettable open-world experience. Engage in thrilling battles, explore a vast and diverse landscape, and unravel the secrets of this captivating and dangerous world. Prepare to embark on an epic quest of discovery and survival.",
       "author": "NatureSeeker",
       "ageRating": "Teen",
-      "date": "2022-11-13"
+      "date": "2022-11-15",
+      "id": 30
     }
   ],
   "userReviews": [
