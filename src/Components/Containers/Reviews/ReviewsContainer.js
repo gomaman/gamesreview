@@ -6,6 +6,7 @@ import { toast, ToastContainer } from 'react-toastify';
 import StyledReviewsContainer from "./StyledReviewsContainer";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import StyledFormComponent from "./GameReviewForm";
 
 
 
@@ -14,6 +15,7 @@ const ReviewCard = styled.div`
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 10);
+    position: relative;
 
     &:hover {
         background-color: rgb(40, 48, 68);
@@ -56,6 +58,22 @@ const ReviewCard = styled.div`
     }
   }
 
+  
+
+  .delete-button {
+    background-color: rgb(255,255,255);
+    color: #000;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 30px;
+    right: 10px;
+  }
+  
+
 `;
 
 const ReviewsContainer = () => {
@@ -70,7 +88,6 @@ const ReviewsContainer = () => {
             })
             .catch(err => toast.error(err.message));
     }, [reviewStatus]);
-
 
     const deleteHandler = (ReviewId) => {
         axios
@@ -89,6 +106,7 @@ const ReviewsContainer = () => {
     } else {
         return (
             <StyledReviewsContainer>
+
                 {dataSet.map((review) => (
                     <ReviewCard key={review.id}>
                         <Link key={review.id} to={`/reviews/${review.id}`} className="news-item-link">
@@ -104,15 +122,15 @@ const ReviewsContainer = () => {
                                 <li>{review.author}</li>
                             </ul>
                         </Link>
-                            <button onClick={() => deleteHandler(review.id)}>Delete</button>
+                        <button className="delete-button" onClick={() => deleteHandler(review.id)}>Delete</button>
                     </ReviewCard>
                 ))}
 
+                <StyledFormComponent />
             </StyledReviewsContainer>
         );
     }
 };
 
-//grizti prie sito style
 
 export default ReviewsContainer;
