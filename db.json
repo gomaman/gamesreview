@@ -45,28 +45,45 @@
     {
       "id": 1,
       "title": "A Plague Tale: Innocence",
-      "platform": ["PC", "PlayStation 4", "Xbox One"],
+      "platform": [
+        "PC",
+        "PlayStation 4",
+        "Xbox One"
+      ],
       "releaseDate": "2019-05-14",
       "genreId": 4
     },
     {
       "id": 2,
       "title": "Hades",
-      "platform": ["PC", "Nintendo Switch"],
+      "platform": [
+        "PC",
+        "Nintendo Switch"
+      ],
       "releaseDate": "2020-09-17",
       "genreId": 3
     },
     {
       "id": 3,
       "title": "Celeste",
-      "platform": ["PC", "PlayStation 4", "Xbox One", "Nintendo Switch"],
+      "platform": [
+        "PC",
+        "PlayStation 4",
+        "Xbox One",
+        "Nintendo Switch"
+      ],
       "releaseDate": "2018-01-25",
       "genreId": 9
     },
     {
       "id": 4,
       "title": "Stardew Valley",
-      "platform": ["PC", "PlayStation 4", "Xbox One", "Nintendo Switch"],
+      "platform": [
+        "PC",
+        "PlayStation 4",
+        "Xbox One",
+        "Nintendo Switch"
+      ],
       "releaseDate": "2016-02-26",
       "genreId": 6
     },
@@ -85,35 +102,57 @@
     {
       "id": 6,
       "title": "Disco Elysium",
-      "platform": ["PC", "PlayStation 4", "PlayStation 5", "Xbox Series X/S"],
+      "platform": [
+        "PC",
+        "PlayStation 4",
+        "PlayStation 5",
+        "Xbox Series X/S"
+      ],
       "releaseDate": "2019-10-15",
       "genreId": 3
     },
     {
       "id": 7,
       "title": "Katana ZERO",
-      "platform": ["PC", "Nintendo Switch"],
+      "platform": [
+        "PC",
+        "Nintendo Switch"
+      ],
       "releaseDate": "2019-04-18",
       "genreId": 2
     },
     {
       "id": 8,
       "title": "Firewatch",
-      "platform": ["PC", "PlayStation 4", "Xbox One", "Nintendo Switch"],
+      "platform": [
+        "PC",
+        "PlayStation 4",
+        "Xbox One",
+        "Nintendo Switch"
+      ],
       "releaseDate": "2016-02-09",
       "genreId": 2
     },
     {
       "id": 9,
       "title": "Outer Wilds",
-      "platform": ["PC", "PlayStation 4", "Xbox One"],
+      "platform": [
+        "PC",
+        "PlayStation 4",
+        "Xbox One"
+      ],
       "releaseDate": "2019-05-29",
       "genreId": 2
     },
     {
       "id": 10,
       "title": "Hyper Light Drifter",
-      "platform": ["PC", "PlayStation 4", "Xbox One", "Nintendo Switch"],
+      "platform": [
+        "PC",
+        "PlayStation 4",
+        "Xbox One",
+        "Nintendo Switch"
+      ],
       "releaseDate": "2016-03-31",
       "genreId": 5
     },
@@ -173,14 +212,23 @@
     {
       "id": 15,
       "title": "The Elder Scrolls V: Skyrim",
-      "platform": ["PC", "PlayStation 4", "Xbox One", "Nintendo Switch"],
+      "platform": [
+        "PC",
+        "PlayStation 4",
+        "Xbox One",
+        "Nintendo Switch"
+      ],
       "releaseDate": "2011-11-11",
       "genreId": 3
     },
     {
       "id": 16,
       "title": "Fallout 4",
-      "platform": ["PC", "PlayStation 4", "Xbox One"],
+      "platform": [
+        "PC",
+        "PlayStation 4",
+        "Xbox One"
+      ],
       "releaseDate": "2015-11-10",
       "genreId": 3
     },
@@ -255,7 +303,10 @@
     {
       "id": 23,
       "title": "Marvel's Spider-Man: Miles Morales",
-      "platform": ["PlayStation 4", "PlayStation 5"],
+      "platform": [
+        "PlayStation 4",
+        "PlayStation 5"
+      ],
       "releaseDate": "2020-11-12",
       "genreId": 2
     },
@@ -283,7 +334,12 @@
     {
       "id": 28,
       "title": "Doom Eternal",
-      "platform": ["PC", "PlayStation 4", "Xbox One", "Nintendo Switch"],
+      "platform": [
+        "PC",
+        "PlayStation 4",
+        "Xbox One",
+        "Nintendo Switch"
+      ],
       "releaseDate": "2020-03-20",
       "genreId": 8
     },
@@ -303,7 +359,10 @@
     {
       "id": 30,
       "title": "Horizon Zero Dawn",
-      "platform": ["PC", "PlayStation 4"],
+      "platform": [
+        "PC",
+        "PlayStation 4"
+      ],
       "releaseDate": "2017-02-28",
       "genreId": 3
     }
@@ -1388,56 +1447,181 @@
       "url": "https://www.urbansplash.co.uk/images/placeholder-16-9.jpg"
     }
   ],
-
   "comments": [
     {
-      "id":1,
+      "id": 1,
       "newsId": 1,
       "date": "2023-04-29",
-      "userId":1,
+      "userId": 1,
       "body": "Nullam et lectus eros. Suspendisse euismod, arcu sed vulputate feugiat, dolor lectus interdum purus, et ullamcorper tellus est in mauris. Vestibulum convallis nulla sit amet sapien interdum feugiat. Aliquam pretium, nisi ac finibus tristique, mauris arcu auctor turpis, ac efficitur eros sem id lectus."
     },
     {
-      "id":2,
+      "id": 2,
       "newsId": 1,
       "date": "2023-04-29",
-      "userId":1,
+      "userId": 1,
       "body": "Nullam et lectus eros. Suspendisse euismod, arcu sed vulputate feugiat, dolor lectus interdum purus, et ullamcorper tellus est in mauris. Vestibulum convallis nulla sit amet sapien interdum feugiat. Aliquam pretium, nisi ac finibus tristique, mauris arcu auctor turpis, ac efficitur eros sem id lectus."
     },
     {
-      "id":3,
+      "id": 3,
       "newsId": 1,
       "date": "2023-04-29",
-      "userId":1,
+      "userId": 1,
       "body": "Nullam et lectus eros. Suspendisse euismod, arcu sed vulputate feugiat, dolor lectus interdum purus, et ullamcorper tellus est in mauris. Vestibulum convallis nulla sit amet sapien interdum feugiat. Aliquam pretium, nisi ac finibus tristique, mauris arcu auctor turpis, ac efficitur eros sem id lectus."
     },
     {
-      "id":4,
+      "id": 4,
       "newsId": 2,
-      "userId":2,
+      "userId": 2,
       "date": "2023-04-29",
       "body": "Nullam et lectus eros. Suspendisse euismod, arcu sed vulputate feugiat, dolor lectus interdum purus, et ullamcorper tellus est in mauris. Vestibulum convallis nulla sit amet sapien interdum feugiat. Aliquam pretium, nisi ac finibus tristique, mauris arcu auctor turpis, ac efficitur eros sem id lectus."
     },
     {
-      "id":10,
+      "id": 10,
       "newsId": 2,
-      "userId":1,
+      "userId": 1,
       "date": "2023-04-29",
       "body": "Nullam et lectus eros. Suspendisse euismod, arcu sed vulputate feugiat, dolor lectus interdum purus, et ullamcorper tellus est in mauris. Vestibulum convallis nulla sit amet sapien interdum feugiat. Aliquam pretium, nisi ac finibus tristique, mauris arcu auctor turpis, ac efficitur eros sem id lectus."
     },
     {
-      "id":5,
+      "id": 5,
       "newsId": 3,
-      "userId":3,
+      "userId": 3,
       "date": "2023-04-29",
       "body": "Nullam et lectus eros. Suspendisse euismod, arcu sed vulputate feugiat, dolor lectus interdum purus, et ullamcorper tellus est in mauris. Vestibulum convallis nulla sit amet sapien interdum feugiat. Aliquam pretium, nisi ac finibus tristique, mauris arcu auctor turpis, ac efficitur eros sem id lectus."
     },
     {
-      "id":6,
+      "id": 6,
       "newsId": 4,
-      "userId":4,
+      "userId": 4,
       "date": "2023-04-29",
       "body": "Nullam et lectus eros. Suspendisse euismod, arcu sed vulputate feugiat, dolor lectus interdum purus, et ullamcorper tellus est in mauris. Vestibulum convallis nulla sit amet sapien interdum feugiat. Aliquam pretium, nisi ac finibus tristique, mauris arcu auctor turpis, ac efficitur eros sem id lectus."
+    },
+    {
+      "newsId": 2,
+      "userId": "",
+      "body": "",
+      "date": "",
+      "id": 11
+    },
+    {
+      "newsId": 2,
+      "userId": "1",
+      "body": "TESTTEST",
+      "date": "2023-06-26 12:49",
+      "id": 12
+    },
+    {
+      "newsId": 2,
+      "userId": 1,
+      "body": "",
+      "date": "2023-06-26 12:52",
+      "id": 13
+    },
+    {
+      "newsId": 2,
+      "userId": 1,
+      "body": "",
+      "date": "2023-06-26 12:52",
+      "id": 14
+    },
+    {
+      "newsId": 2,
+      "userId": 0,
+      "body": "",
+      "date": "",
+      "id": 15
+    },
+    {
+      "newsId": 2,
+      "userId": 1,
+      "body": "TEST",
+      "date": "2023-06-26 12:53",
+      "id": 16
+    },
+    {
+      "newsId": 2,
+      "userId": 1,
+      "body": "TEST",
+      "date": "2023-06-26 12:53",
+      "id": 17
+    },
+    {
+      "newsId": 2,
+      "userId": 0,
+      "body": "",
+      "date": "",
+      "id": 18
+    },
+    {
+      "newsId": 2,
+      "userId": 0,
+      "body": "TEST",
+      "date": "",
+      "id": 19
+    },
+    {
+      "newsId": 2,
+      "userId": 2,
+      "body": "TEST",
+      "date": "2023-06-26 14:26",
+      "id": 20
+    },
+    {
+      "newsId": 2,
+      "userId": 0,
+      "body": "TEST",
+      "date": "",
+      "id": 21
+    },
+    {
+      "newsId": 2,
+      "userId": null,
+      "body": "TEST",
+      "date": "",
+      "id": 22
+    },
+    {
+      "newsId": 2,
+      "userId": 1,
+      "body": "test",
+      "date": "2023-06-26 14:29",
+      "id": 23
+    },
+    {
+      "newsId": 2,
+      "userId": null,
+      "body": "test",
+      "date": "",
+      "id": 24
+    },
+    {
+      "newsId": 2,
+      "userId": null,
+      "body": "TEST",
+      "date": "",
+      "id": 25
+    },
+    {
+      "newsId": 2,
+      "userId": 0,
+      "body": "test",
+      "date": "",
+      "id": 26
+    },
+    {
+      "newsId": 2,
+      "userId": 1,
+      "body": "TEST",
+      "date": "",
+      "id": 27
+    },
+    {
+      "newsId": 2,
+      "userId": 2,
+      "body": "TEST",
+      "date": "2023-06-26 14:35",
+      "id": 28
     }
   ]
 }
