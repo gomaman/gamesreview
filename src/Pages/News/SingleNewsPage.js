@@ -25,7 +25,7 @@ const SingleNewsPage = () => {
 
 
   return (
-    <Container>
+    <Container sx={{ margin: '45px auto' }}>
       <SingleNewsItem />
       <NewsComments commentsUpdated={commentsUpdated} onEditComment={handleEditComment} />
       <AddNewsComment handleCommentSubmit={handleCommentSubmit} beforeEditComment={beforeEditComment}/>

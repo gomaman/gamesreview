@@ -5,7 +5,7 @@ import HomeReviewsContainer from "./HomeReviews"
 
 const HomePage = () => {
     return (
-        <Container>
+        <Container sx={{ margin: '45px auto' }}>
             <HomeNewsContainer></HomeNewsContainer>
             <HomeGamesContainer></HomeGamesContainer>
             <HomeReviewsContainer></HomeReviewsContainer>

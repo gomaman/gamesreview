@@ -43,17 +43,6 @@
   ],
   "games": [
     {
-      "id": 1,
-      "title": "A Plague Tale: Innocence",
-      "platform": [
-        "PC",
-        "PlayStation 4",
-        "Xbox One"
-      ],
-      "releaseDate": "2019-05-14",
-      "genreId": 4
-    },
-    {
       "id": 2,
       "title": "Hades",
       "platform": [
@@ -607,49 +596,9 @@
       "ageRating": "Teen",
       "date": "2023-06-05",
       "id": 29
-    },
-    {
-      "gameId": 2,
-      "score": 28,
-      "title": "TEST",
-      "body": "asdsa",
-      "author": "TEST",
-      "ageRating": "Teen",
-      "date": "2023-06-03",
-      "id": 30
-    },
-    {
-      "gameId": 2,
-      "score": 66,
-      "title": "TEST",
-      "body": "adsa",
-      "author": "TEST",
-      "ageRating": "Teen",
-      "date": "2023-06-03",
-      "id": 31
     }
   ],
   "userReviews": [
-    {
-      "id": 1,
-      "gameId": 1,
-      "score": 8,
-      "title": "Great Game!",
-      "body": "I had a lot of fun playing this game. The graphics are impressive and the gameplay is engaging.",
-      "author": "GamingEnthusiast24",
-      "date": "2023-03-13",
-      "userId": 3
-    },
-    {
-      "id": 2,
-      "gameId": 1,
-      "score": 6,
-      "title": "Decent Game",
-      "body": "It's an okay game. The visuals are nice, but I felt the gameplay could have been better.",
-      "author": "CasualGamer99",
-      "date": "2022-06-23",
-      "userId": 7
-    },
     {
       "id": 3,
       "gameId": 2,
@@ -931,16 +880,6 @@
       "id": 37
     },
     {
-      "gameId": 5,
-      "score": 6,
-      "title": "test",
-      "body": "test",
-      "author": "Jonathan Mitchell",
-      "date": "2023-06-27 07:18",
-      "userId": 1,
-      "id": 38
-    },
-    {
       "gameId": 16,
       "score": 5,
       "title": "TEST",
@@ -949,6 +888,16 @@
       "date": "2023-06-27 07:30",
       "userId": 1,
       "id": 39
+    },
+    {
+      "gameId": 3,
+      "score": 5,
+      "title": "TESTasas",
+      "body": "TEST",
+      "author": "Jonathan Mitchell",
+      "date": "2023-06-27 09:35",
+      "userId": 1,
+      "id": 40
     }
   ],
   "users": [
@@ -1381,11 +1330,11 @@
       "body": "Nullam et lectus eros. Suspendisse euismod, arcu sed vulputate feugiat, dolor lectus interdum purus, et ullamcorper tellus est in mauris. Vestibulum convallis nulla sit amet sapien interdum feugiat. Aliquam pretium, nisi ac finibus tristique, mauris arcu auctor turpis, ac efficitur eros sem id lectus."
     },
     {
-      "id": 4,
       "newsId": 2,
       "userId": 2,
-      "date": "2023-04-29",
-      "body": "Nullam et lectus eros. Suspendisse euismod, arcu sed vulputate feugiat, dolor lectus interdum purus, et ullamcorper tellus est in mauris. Vestibulum convallis nulla sit amet sapien interdum feugiat. Aliquam pretium, nisi ac finibus tristique, mauris arcu auctor turpis, ac efficitur eros sem id lectus."
+      "body": "Nullam et lectus eros. Suspendisse euismod, arcu sed vulputate feugiat, dolor lectus interdum purus, et ullamcorper tellus est in mauris. Vestibulum convallis nulla sit amet sapien interdum feugiat. Aliquam pretium, nisi ac finibus tristique, mauris arcu auctor turpis, ac efficitur eros sem id lectus.",
+      "date": "2023-06-27 08:25",
+      "id": 4
     },
     {
       "newsId": 2,
@@ -1414,13 +1363,6 @@
       "body": "test",
       "date": "2023-06-26 16:24",
       "id": 11
-    },
-    {
-      "newsId": 7,
-      "userId": 3,
-      "body": "TEST",
-      "date": "2023-06-26 22:30",
-      "id": 12
     }
   ]
 }

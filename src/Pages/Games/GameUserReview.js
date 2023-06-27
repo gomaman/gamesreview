@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { API_URL } from '../../Config/LinksConfig';
-import { Button2 } from '../../Components/Containers/Button/Buttons';
+import { Button2 } from '../../Components/BlogContainer/Button/Buttons';
 import { toast } from 'react-toastify';
 
 const GameUserReview = ({ userReview, deleteHandler, editSaveHandler }) => {

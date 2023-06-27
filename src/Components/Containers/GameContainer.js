@@ -1,13 +1,19 @@
 import React from 'react';
 import './GameContainer.css';
-import { Button2 } from './Button/Buttons';
+import { Button2 } from '../BlogContainer/Button/Buttons';
+import styled from 'styled-components';
+
+const TitleText = styled.p`
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+`;
 
 const GameContainer = ({ children, buttonText, titleText }) => {
   return (
     <div className="game-container">
       {children}
-      <Button2 className="game-button">{buttonText}</Button2>
-      <p>{titleText}</p>
+      <TitleText>{titleText}</TitleText>
     </div>
   );
 };

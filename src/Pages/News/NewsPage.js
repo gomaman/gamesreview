@@ -37,7 +37,7 @@ const NewsPage = () => {
     }   else {
         return (
             <Container>
-                <NewsContainer>
+                <NewsContainer >
                     <LargeNews firstNews={firstNews}></LargeNews>
                     <SmallNews afterFirstNews={afterFirstNews}></SmallNews>
                 </NewsContainer>

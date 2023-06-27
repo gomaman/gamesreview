@@ -17,14 +17,13 @@ const ReviewItem = () => {
         axios.get(API_URL + `/reviews/${id}?_expand=game`)
             .then(res => {
                 const reviewsData = res.data;
-                console.log(reviewsData)
                 setReviewsData(reviewsData);
             })
             .catch(err => toast.error(err.message))
     }, [id]);
 
 
-    const { title, body, author, date, score, releaseDate } = reviewsData
+    const { title, body, author, date, score, } = reviewsData
 
 
 
@@ -34,7 +33,7 @@ const ReviewItem = () => {
 
 
     return (
-        <Container sx={{ margin: '20px auto' }}>
+        <Container sx={{ margin: '45px auto' }}>
             <StyledReviewItem>
                     <div className="review-content">
                     <h2 className="review-title">{title}</h2>
