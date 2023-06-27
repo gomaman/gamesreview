@@ -13,7 +13,6 @@ const HomeNewsContainer = () => {
             .get(API_URL + `/games?_limit=5`)
             .then(res => {
                 const gamesData = res.data;
-                console.log(gamesData);
                 setGamesData(gamesData);
             })
             .catch(err => toast.error(err.message));
@@ -28,7 +27,6 @@ const HomeNewsContainer = () => {
             {gamesData.map(data => {
                 return (
                     <div key={data.id} className="single-news-container">
-
                         <div className="single-news-content">
                             <Link to={`/games/game/${data.id}`} key={data.id}>
                                 <h2 className="news-title">{data.title}</h2>

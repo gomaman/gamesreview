@@ -1,18 +1,35 @@
-import React from 'react'
-import GameContainer from '../../Components/Containers/GameContainer'
+import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import { toast } from 'react-toastify';
+import { API_URL } from '../../Config/LinksConfig';
 
 const NewsBanner = () => {
-  return (
-    <div className='games-list-container'>
-    <ul className='games-list'>
-        <li style={{ backgroundImage: `url(https://gaming-cdn.com/images/products/268/orig-fallback-v1/the-witcher-3-wild-hunt-pc-game-gog-com-cover.jpg?v=1650526691)` }}>
-            <GameContainer 
-            buttonText="View Game Details">
-            </GameContainer>
-        </li>
-    </ul>
-</div>
-  )
-}
+  const [singleGame, setSingleGame] = useState('');
 
-export default NewsBanner
+  useEffect(() => {
+    axios
+      .get(API_URL + `/games?_limit=1`)
+      .then(res => {
+        console.log(res.data[0]);
+        setSingleGame(res.data[0]);
+      })
+      .catch(err => toast.error(err.message));
+  }, []);
+
+  return (
+    <div className="games-list-container" style={{ backgroundImage: 'url(https://gaming-cdn.com/images/products/268/orig-fallback-v1/the-witcher-3-wild-hunt-pc-game-gog-com-cover.jpg?v=1650526691)' }}>
+      <ul className="games-list">
+        <li></li>
+      </ul>
+      <div className="game-details">
+        <Link to={`/games/game/${singleGame.id}`} key={singleGame.id}>
+          <h2>{singleGame.title}</h2>
+        </Link>
+        <p>Release Date: {singleGame.releaseDate}</p>
+      </div>
+    </div>
+  );
+};
+
+export default NewsBanner;
