@@ -34,7 +34,7 @@ const ReviewItem = () => {
 
 
     return (
-        <Container sx={{ margin: '20px auto' }}>
+        <Container sx={{ margin: '45px auto' }}>
             <StyledReviewItem>
                     <div className="review-content">
                     <h2 className="review-title">{title}</h2>

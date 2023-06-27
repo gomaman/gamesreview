@@ -1,6 +1,6 @@
 import React from 'react';
 import StyledForm from '../SingleNews/StyledForm';
-import { Button2 } from '../Button/Buttons';
+import { Button2 } from '../../BlogContainer/Button/Buttons';
 import CurrentDateTime from '../../Date/Date';
 import { toast } from 'react-toastify';
 import { useEffect } from 'react';

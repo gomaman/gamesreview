@@ -1,6 +1,6 @@
 import React from 'react';
 import './PictureContainer.css';
-import { Button2 } from './Button/Buttons';
+import { Button2 } from '../BlogContainer/Button/Buttons';
 
 const PictureContainer = ({ imageSrc, altText, linkText, linkUrl }) => {
   return (

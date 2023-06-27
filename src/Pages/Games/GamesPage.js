@@ -10,7 +10,7 @@ import { Link } from "react-router-dom"
 
 
 const GamesPage = () => {
-    const backgroundImageUrl = 'https://gaming-cdn.com/images/products/268/orig-fallback-v1/the-witcher-3-wild-hunt-pc-game-gog-com-cover.jpg?v=1650526691';
+    const backgroundImageUrl = 'https://assetsio.reedpopcdn.com/system-shock-remake-robot.jpg?width=1200&height=1200&fit=bounds&quality=70&format=jpg&auto=webp';
 
     const [games, setGames] = useState([])
     const [pictures, setPictures] = useState([])
@@ -26,7 +26,6 @@ const GamesPage = () => {
     }, [])
 
     return (
-
         <Container className="games-page-container">
             <section>
                 <PictureContainer

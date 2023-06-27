@@ -23,20 +23,18 @@ const HomeNewsContainer = () => {
 
     return (
         <StyledNewsItem>
-            {reviewsData.map(data => {
-                return (
-                    <div key={data.id} className="single-news-container">
-                        <div className="single-news-content">
-                            <Link to={`/games/game/${data.id}`} key={data.id}>
-                                <h2 className="news-title">{data.title}</h2>
-                            </Link>
-                            <p className="news-body">{data.body}</p>
-                            <p className="news-date">Release Date: {data.date}</p>
-                        </div>
-                    </div>
-                );
-            })}
-        </StyledNewsItem>
+        {reviewsData.map(data => (
+          <div key={data.id} className="single-news-container">
+            <div className="single-news-content">
+              <Link to={`/reviews/${data.id}`} key={data.id}>
+                <h2 className="news-title">{data.title}</h2>
+              </Link>
+              <p className="news-body">{data.body}</p>
+              <p className="news-date">Release Date: {data.date}</p>
+            </div>
+          </div>
+        ))}
+      </StyledNewsItem>
     );
 };
 

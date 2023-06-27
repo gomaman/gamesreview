@@ -92,9 +92,7 @@ const GamePage = () => {
         <Container className="games-page-container">
             <section className="game-details-section">
                 <PictureContainer imageSrc={picture} />
-
                 <h2 className="game-title">{game.title}</h2>
-
                 {game && (
                     <div>
 

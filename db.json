@@ -596,26 +596,6 @@
       "ageRating": "Teen",
       "date": "2023-06-05",
       "id": 29
-    },
-    {
-      "gameId": 2,
-      "score": 28,
-      "title": "TEST",
-      "body": "asdsa",
-      "author": "TEST",
-      "ageRating": "Teen",
-      "date": "2023-06-03",
-      "id": 30
-    },
-    {
-      "gameId": 2,
-      "score": 66,
-      "title": "TEST",
-      "body": "adsa",
-      "author": "TEST",
-      "ageRating": "Teen",
-      "date": "2023-06-03",
-      "id": 31
     }
   ],
   "userReviews": [
@@ -908,6 +888,16 @@
       "date": "2023-06-27 07:30",
       "userId": 1,
       "id": 39
+    },
+    {
+      "gameId": 3,
+      "score": 5,
+      "title": "TESTasas",
+      "body": "TEST",
+      "author": "Jonathan Mitchell",
+      "date": "2023-06-27 09:35",
+      "userId": 1,
+      "id": 40
     }
   ],
   "users": [
@@ -1373,13 +1363,6 @@
       "body": "test",
       "date": "2023-06-26 16:24",
       "id": 11
-    },
-    {
-      "newsId": 7,
-      "userId": 3,
-      "body": "TEST",
-      "date": "2023-06-26 22:30",
-      "id": 12
     }
   ]
 }
