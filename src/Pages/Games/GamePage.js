@@ -97,7 +97,7 @@ const GamePage = () => {
 
                 {game && (
                     <div>
-                        <div>
+
                             <ul className="platform-list">
                                 {game.platform.map((platform) => (
                                     <li key={platform} className="platform-item">
@@ -105,7 +105,7 @@ const GamePage = () => {
                                     </li>
                                 ))}
                             </ul>
-                        </div>
+
                         <div className="release-date">
                             <p>{game.releaseDate}</p>
                         </div>

@@ -26,7 +26,6 @@ const NewsPage = () => {
                 setNews(newsData);
                 setFirstNews(newsData[0])
                 setAfterFirstNews(newsData.slice(1, 4))
-
             })
             .catch(err => toast.error(err.message))
     }, []);
