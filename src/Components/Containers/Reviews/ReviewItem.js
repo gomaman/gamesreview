@@ -17,14 +17,13 @@ const ReviewItem = () => {
         axios.get(API_URL + `/reviews/${id}?_expand=game`)
             .then(res => {
                 const reviewsData = res.data;
-                console.log(reviewsData)
                 setReviewsData(reviewsData);
             })
             .catch(err => toast.error(err.message))
     }, [id]);
 
 
-    const { title, body, author, date, score, releaseDate } = reviewsData
+    const { title, body, author, date, score, } = reviewsData
 
 
 
