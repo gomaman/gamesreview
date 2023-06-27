@@ -20,6 +20,7 @@ function App() {
       <NavigationGenerator></NavigationGenerator>
       <Routes>
         <Route path='/' element={<HomePage />} ></Route>
+        
         <Route path='/games' element={<GamesPage />} ></Route>
         <Route path='/games/game/:id' element={<GamePage />} ></Route>
 

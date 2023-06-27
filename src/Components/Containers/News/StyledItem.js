@@ -12,9 +12,6 @@ const StyledNewsItem = styled.div`
   &:hover {
     box-shadow: rgba(0, 0, 0, 0.671) 0px 3px 8px;
   }
-
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
   grid-gap: 15px; 
 
   .single-news-img-container img {

@@ -1,5 +1,5 @@
 import React from 'react';
-import StyledNewsItem from './StyledNewsItem';
+import StyledItem from './StyledItem';
 import { Link } from 'react-router-dom';
 
 const NewsItem = ({ newsData }) => {
@@ -11,7 +11,7 @@ const NewsItem = ({ newsData }) => {
     const finalBody = `${truncatedBody} ...`
 
     return (
-        <StyledNewsItem className="blog-container big">
+        <StyledItem className="blog-container big">
             <Link to={`/news/${newsData.id}`} className="news-item-link">
                 <div className="blog-img-container">
                     <img src={thumbnail} alt="Blog Image" />
@@ -25,7 +25,7 @@ const NewsItem = ({ newsData }) => {
                     </div>
                 </div>
             </Link>
-        </StyledNewsItem>
+        </StyledItem>
     );
 };
 

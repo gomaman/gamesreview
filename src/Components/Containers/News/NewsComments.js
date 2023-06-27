@@ -56,7 +56,6 @@ const NewsComments = ({ commentsUpdated, onEditComment  }) => {
                     <button className="edit-button" onClick={() => editHandler(comment)}>Edit</button>
                 </CommentCard>
             ))}
-
             <ToastContainer></ToastContainer>
         </>
     );

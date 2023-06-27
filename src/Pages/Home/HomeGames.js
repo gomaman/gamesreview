@@ -10,7 +10,7 @@ const HomeNewsContainer = () => {
 
     useEffect(() => {
         axios
-            .get(API_URL + `/games?_limit=5`)
+            .get(API_URL + `/games?_limit=6`)
             .then(res => {
                 const gamesData = res.data;
                 setGamesData(gamesData);
@@ -27,9 +27,13 @@ const HomeNewsContainer = () => {
         {gamesData.map(data => (
           <div key={data.id} className="single-news-container">
             <div className="single-news-content">
-              <Link to={`/games/game/${data.id}`} key={data.id}>
-                <h2 className="news-title">{data.title}</h2>
-              </Link>
+            <Link
+          to={`/games/game/${data.id}`}
+          key={data.id}
+          style={{ textDecoration: 'none', color: 'rgb(254,255,254)'}}
+        >
+          <h2>{data.title}</h2>
+        </Link>
               <p className="news-body">{data.body}</p>
               <ul>
                 {data.platform.map(platform => (

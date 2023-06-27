@@ -35,21 +35,20 @@ const ReviewItem = () => {
     return (
         <Container sx={{ margin: '45px auto' }}>
             <StyledReviewItem>
-                    <div className="review-content">
+                <div className="review-content">
                     <h2 className="review-title">{title}</h2>
-                        <p className="review-body">{body}</p>
-                        <p className="review-author">Author: {author}</p>
-                        <p className="review-date">Release Date: {date}</p>
-                    </div>
+                    <p className="review-body">{body}</p>
+                    <p className="review-author">Author: {author}</p>
+                    <p className="review-date">Release Date: {date}</p>
+                    <p className="review-game-release-date">Reviewed: {reviewsData.game.releaseDate}</p>
+                </div>
 
-                    <div className="review-content">
-                        <h2 className="review-game-title">Title: {reviewsData.game.title}</h2>
-                        <p className="review-game-release-date">Release Date: {reviewsData.game.releaseDate}</p>
-                        <div className="review-score">
-                            <p className="review-score">Score</p>
-                            <p className="review-score">{score}</p>
-                        </div>
+                <div className="review-right-content">
+                    <div className="review-score">
+                        <h2 className="review-game-title">{reviewsData.game.title}</h2>
+                        <p className="review-score">Score: {score}</p>
                     </div>
+                </div>
             </StyledReviewItem>
         </Container>
     );

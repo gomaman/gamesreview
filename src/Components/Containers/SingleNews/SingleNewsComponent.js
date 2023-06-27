@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import StyledNewsItem from '../News/StyledNewsItem';
+import StyledNewsItem from '../News/StyledItem';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import { toast } from 'react-toastify';

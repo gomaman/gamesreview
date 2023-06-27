@@ -42,7 +42,7 @@ const GamesPage = () => {
                         {games.map((game, index) => (
                             <Link key={game.id} to={`/games/game/${game.id}`}>
                                 <li key={game.id} style={{ backgroundImage: `url(${pictures[index].url})` }}>
-                                    <GameContainer key={game.id} titleText={game.title} buttonText="View Game Details" />
+                                    <GameContainer key={game.id}/>
                                 </li>
                             </Link>
                         ))}

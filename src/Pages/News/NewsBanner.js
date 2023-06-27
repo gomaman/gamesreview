@@ -17,13 +17,23 @@ const NewsBanner = () => {
       .catch(err => toast.error(err.message));
   }, []);
 
+
+  if (!singleGame) {
+    return <div>Loading...</div>;
+  }
+
+
   return (
     <div className="games-list-container" style={{ backgroundImage: 'url(https://gaming-cdn.com/images/products/268/orig-fallback-v1/the-witcher-3-wild-hunt-pc-game-gog-com-cover.jpg?v=1650526691)' }}>
       <ul className="games-list">
         <li></li>
       </ul>
       <div className="game-details">
-        <Link to={`/games/game/${singleGame.id}`} key={singleGame.id}>
+        <Link
+          to={`/games/game/${singleGame.id}`}
+          key={singleGame.id}
+          style={{ textDecoration: 'none', color: 'black', padding: '10px' }}
+        >
           <h2>{singleGame.title}</h2>
         </Link>
         <p>Release Date: {singleGame.releaseDate}</p>

@@ -1,12 +1,12 @@
 import React from 'react';
 import './GameContainer.css';
-import { Button2 } from '../BlogContainer/Button/Buttons';
 import styled from 'styled-components';
 
 const TitleText = styled.p`
-  color: black;
+  background-color: darkgray;
+  color: white;
   font-weight: bold;
-  font-size: 30px;
+  padding: 20px;
 `;
 
 const GameContainer = ({ children, buttonText, titleText }) => {

@@ -23,6 +23,13 @@ const StyledReviewItem = styled.div`
     font-weight: bold;
   }
 
+  .review-right-content {
+        margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    display: grid;
+  }
+
   .review-title {
     color: white;
     font-size: 24px;
@@ -77,6 +84,31 @@ const StyledReviewItem = styled.div`
   text-transform: uppercase;
   margin-top: 4px;
 }
+  @media (max-width: 1000px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 16px;
+
+    .review-title {
+      font-size: 20px;
+    }
+
+    .review-score {
+      font-size: 36px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 8px;
+
+    .review-title {
+      font-size: 18px;
+    }
+
+    .review-score {
+      font-size: 24px;
+    }
+  }
 `;
 
 export default StyledReviewItem;

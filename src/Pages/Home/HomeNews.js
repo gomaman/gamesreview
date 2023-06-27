@@ -10,7 +10,7 @@ const HomeNewsContainer = () => {
 
     useEffect(() => {
         axios
-            .get(API_URL + `/news?_limit=5`)
+            .get(API_URL + `/news?_limit=6`)
             .then(res => {
                 const newsData = res.data;
                 setReviewsData(newsData);
