@@ -1,8 +1,16 @@
+import { Container } from "@mui/material"
+import ReviewsContainer from "../../Components/Containers/Reviews/ReviewsContainer"
+
+
+
 const ReviewsPage = () => {
     return (
-        <h1> Reviews Page </h1>
-    )
-}
+<Container>
+        <ReviewsContainer>
+        </ReviewsContainer>
+</Container>
+
+)}
 
 
 

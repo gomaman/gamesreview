@@ -13,12 +13,7 @@ export const NAV_ITEMS = [
     },
     {
         href: "/news",
-        text: "Albums"
-    },
-    {
-        href: "/search",
-        text: "Search"
+        text: "News"
     },
 ]
 
-// export const API_URL = 'http://localhost:3000'

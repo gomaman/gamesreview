@@ -1,0 +1,25 @@
+
+  .picture-container {
+    position: relative;
+  }
+  
+  .picture-image-wrapper {
+    position: relative;
+    display: inline-block;
+    margin-top: 50px;
+  }
+  
+  .picture-link {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 14px;
+  }
+  
+  .picture-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }

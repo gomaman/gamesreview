@@ -1,6 +1,15 @@
+import { Container } from "@mui/material"
+import HomeNewsContainer from "./HomeNews"
+import HomeGamesContainer from "./HomeGames"
+import HomeReviewsContainer from "./HomeReviews"
+
 const HomePage = () => {
     return (
-        <h1> Home Page </h1>
+        <Container>
+            <HomeNewsContainer></HomeNewsContainer>
+            <HomeGamesContainer></HomeGamesContainer>
+            <HomeReviewsContainer></HomeReviewsContainer>
+        </Container>
     )
 }
 
